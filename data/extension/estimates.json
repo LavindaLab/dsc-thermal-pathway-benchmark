@@ -1,0 +1,179 @@
+{
+  "analysis_version": "subscription-cli-extension-1.0",
+  "collection": {
+    "planned": 330,
+    "completed": 330,
+    "failed": 0,
+    "unattempted": 0
+  },
+  "configurations": {
+    "gpt-5.6-sol": {
+      "requested_configuration": "gpt-5.6-sol",
+      "returned_model_identifier": null,
+      "returned_identifier_evidence": "not exposed by the Codex CLI stream",
+      "client": "Codex CLI 0.157.1 via subscription",
+      "effort": "high"
+    },
+    "claude-opus-5-5": {
+      "requested_configuration": "claude-opus-5-5",
+      "returned_model_identifier": "claude-opus-5-5",
+      "returned_identifier_evidence": "exposed by the Claude CLI stream",
+      "client": "Claude Code 2.1.283 via existing subscription",
+      "effort": "high"
+    }
+  },
+  "parse_status_counts": {
+    "parsed_valid": 330
+  },
+  "unresolved_conservative_partial_or_other_events": 49,
+  "broad_identity_recall": {
+    "gpt-5.6-sol": {
+      "terminal_melting": {
+        "numerator": 97,
+        "denominator": 108,
+        "estimate": 0.8981481481481481,
+        "ci95": [
+          0.7976190476190477,
+          0.9743589743589743
+        ],
+        "material_clusters": 30,
+        "bootstrap_resamples": 10000,
+        "seed": 20260927
+      },
+      "non_melting": {
+        "numerator": 68,
+        "denominator": 159,
+        "estimate": 0.4276729559748428,
+        "ci95": [
+          0.31817599067599067,
+          0.5454545454545454
+        ],
+        "material_clusters": 30,
+        "bootstrap_resamples": 10000,
+        "seed": 20260927
+      }
+    },
+    "claude-opus-5-5": {
+      "terminal_melting": {
+        "numerator": 91,
+        "denominator": 108,
+        "estimate": 0.8425925925925926,
+        "ci95": [
+          0.709197695035461,
+          0.9696969696969697
+        ],
+        "material_clusters": 30,
+        "bootstrap_resamples": 10000,
+        "seed": 20260927
+      },
+      "non_melting": {
+        "numerator": 102,
+        "denominator": 159,
+        "estimate": 0.6415094339622641,
+        "ci95": [
+          0.5119047619047619,
+          0.7687074829931972
+        ],
+        "material_clusters": 30,
+        "bootstrap_resamples": 10000,
+        "seed": 20260927
+      }
+    }
+  },
+  "paired_protocol_nonmelting_recall": {
+    "gpt-5.6-sol": {
+      "broad": {
+        "numerator": 53,
+        "denominator": 123,
+        "recall": 0.43089430894308944
+      },
+      "protocol": {
+        "numerator": 45,
+        "denominator": 123,
+        "recall": 0.36585365853658536
+      },
+      "protocol_minus_broad": -0.06504065040650409,
+      "ci95": [
+        -0.1449275362318841,
+        0.00877192982456143
+      ],
+      "material_clusters": 22,
+      "bootstrap_resamples": 10000,
+      "seed": 20260927
+    },
+    "claude-opus-5-5": {
+      "broad": {
+        "numerator": 79,
+        "denominator": 123,
+        "recall": 0.6422764227642277
+      },
+      "protocol": {
+        "numerator": 73,
+        "denominator": 123,
+        "recall": 0.5934959349593496
+      },
+      "protocol_minus_broad": -0.04878048780487809,
+      "ci95": [
+        -0.13637334887334895,
+        0.04547558922558899
+      ],
+      "material_clusters": 22,
+      "bootstrap_resamples": 10000,
+      "seed": 20260927
+    }
+  },
+  "overall_finite_reference_precision": {
+    "gpt-5.6-sol": {
+      "broad": {
+        "numerator": 165,
+        "denominator": 552,
+        "estimate": 0.29891304347826086,
+        "ci95": [
+          0.24665391969407266,
+          0.354093424532306
+        ],
+        "material_clusters": 30,
+        "bootstrap_resamples": 10000,
+        "seed": 20260927
+      },
+      "protocol": {
+        "numerator": 113,
+        "denominator": 282,
+        "estimate": 0.40070921985815605,
+        "ci95": [
+          0.3358208955223881,
+          0.4724137931034483
+        ],
+        "material_clusters": 25,
+        "bootstrap_resamples": 10000,
+        "seed": 20260927
+      }
+    },
+    "claude-opus-5-5": {
+      "broad": {
+        "numerator": 193,
+        "denominator": 556,
+        "estimate": 0.3471223021582734,
+        "ci95": [
+          0.29328457207881653,
+          0.40613044109714097
+        ],
+        "material_clusters": 30,
+        "bootstrap_resamples": 10000,
+        "seed": 20260927
+      },
+      "protocol": {
+        "numerator": 140,
+        "denominator": 323,
+        "estimate": 0.43343653250773995,
+        "ci95": [
+          0.34385937240577785,
+          0.5356064794338787
+        ],
+        "material_clusters": 25,
+        "bootstrap_resamples": 10000,
+        "seed": 20260927
+      }
+    }
+  }
+}

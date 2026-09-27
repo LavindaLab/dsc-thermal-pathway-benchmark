@@ -1,0 +1,15 @@
+stratum,material_id,complexity_tier,requested_model,responses,completed,gold_event_opportunities,predicted_events,correct_identities,recall,precision,f1
+polymer_control,poly_atactic_pmma,P1,gpt-5.6-luna,3,3,3,6,3,1.0,0.5,0.6666666666666666
+polymer_control,poly_atactic_pmma,P1,gpt-6-luna,3,3,3,7,3,1.0,0.42857142857142855,0.6
+polymer_control,poly_atactic_ps,P1,gpt-5.6-luna,3,3,3,7,3,1.0,0.42857142857142855,0.6
+polymer_control,poly_atactic_ps,P1,gpt-6-luna,3,3,3,7,2,0.6666666666666666,0.2857142857142857,0.4
+polymer_control,poly_ipp,P3,gpt-5.6-luna,3,3,9,13,6,0.6666666666666666,0.46153846153846156,0.5454545454545455
+polymer_control,poly_ipp,P3,gpt-6-luna,3,3,9,15,7,0.7777777777777778,0.4666666666666667,0.5833333333333334
+polymer_control,poly_pet,P2,gpt-5.6-luna,3,3,12,9,6,0.5,0.6666666666666666,0.5714285714285715
+polymer_control,poly_pet,P2,gpt-6-luna,3,3,12,10,10,0.8333333333333334,1.0,0.9090909090909091
+polymer_control,poly_plla,P2,gpt-5.6-luna,3,3,9,10,8,0.8888888888888888,0.8,0.8421052631578948
+polymer_control,poly_plla,P2,gpt-6-luna,3,3,9,10,7,0.7777777777777778,0.7,0.7368421052631577
+polymer_control,poly_pvdf,P3,gpt-5.6-luna,3,3,6,9,6,1.0,0.6666666666666666,0.8
+polymer_control,poly_pvdf,P3,gpt-6-luna,3,3,6,14,6,1.0,0.42857142857142855,0.6
+complex_material,complex_cocoa_butter,C1,gpt-5.6-luna,3,3,18,15,0,0.0,0.0,0.0
+complex_material,complex_cocoa_butter,C1,gpt-6-luna,3,3,18,16,0,0.0,0.0,0.0

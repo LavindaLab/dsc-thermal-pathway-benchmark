@@ -1,0 +1,29 @@
+model,model_label,event_family,event_family_label,numerator,denominator,recall,scope
+gpt-5.6-luna,Luna 5.6 API,melting,Terminal melting,93,108,0.8611111111111112,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-luna,Luna 5.6 API,solid_solid_transition,Solid-solid transition,43,90,0.4777777777777778,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-luna,Luna 5.6 API,glass_transition,Glass transition,8,24,0.3333333333333333,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-luna,Luna 5.6 API,cold_crystallization,Cold crystallization,13,21,0.6190476190476191,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-luna,Luna 5.6 API,crystallization_on_cooling,Cooling crystallization,1,6,0.16666666666666666,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-luna,Luna 5.6 API,melt_mediated_conversion,Melt-mediated conversion,0,15,0.0,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-luna,Luna 5.6 API,melt_sublimation_recrystallization,Melt/sublimation/recrystallization,0,3,0.0,broad molecular prompts; three generations; repeated opportunities
+gpt-6-luna,Luna 6 API,melting,Terminal melting,101,108,0.9351851851851852,broad molecular prompts; three generations; repeated opportunities
+gpt-6-luna,Luna 6 API,solid_solid_transition,Solid-solid transition,26,90,0.28888888888888886,broad molecular prompts; three generations; repeated opportunities
+gpt-6-luna,Luna 6 API,glass_transition,Glass transition,4,24,0.16666666666666666,broad molecular prompts; three generations; repeated opportunities
+gpt-6-luna,Luna 6 API,cold_crystallization,Cold crystallization,6,21,0.2857142857142857,broad molecular prompts; three generations; repeated opportunities
+gpt-6-luna,Luna 6 API,crystallization_on_cooling,Cooling crystallization,2,6,0.3333333333333333,broad molecular prompts; three generations; repeated opportunities
+gpt-6-luna,Luna 6 API,melt_mediated_conversion,Melt-mediated conversion,2,15,0.13333333333333333,broad molecular prompts; three generations; repeated opportunities
+gpt-6-luna,Luna 6 API,melt_sublimation_recrystallization,Melt/sublimation/recrystallization,0,3,0.0,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-sol,Sol CLI,melting,Terminal melting,97,108,0.8981481481481481,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-sol,Sol CLI,solid_solid_transition,Solid-solid transition,35,90,0.3888888888888889,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-sol,Sol CLI,glass_transition,Glass transition,19,24,0.7916666666666666,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-sol,Sol CLI,cold_crystallization,Cold crystallization,4,21,0.19047619047619047,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-sol,Sol CLI,crystallization_on_cooling,Cooling crystallization,0,6,0.0,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-sol,Sol CLI,melt_mediated_conversion,Melt-mediated conversion,10,15,0.6666666666666666,broad molecular prompts; three generations; repeated opportunities
+gpt-5.6-sol,Sol CLI,melt_sublimation_recrystallization,Melt/sublimation/recrystallization,0,3,0.0,broad molecular prompts; three generations; repeated opportunities
+claude-opus-5-5,Opus CLI,melting,Terminal melting,91,108,0.8425925925925926,broad molecular prompts; three generations; repeated opportunities
+claude-opus-5-5,Opus CLI,solid_solid_transition,Solid-solid transition,64,90,0.7111111111111111,broad molecular prompts; three generations; repeated opportunities
+claude-opus-5-5,Opus CLI,glass_transition,Glass transition,24,24,1.0,broad molecular prompts; three generations; repeated opportunities
+claude-opus-5-5,Opus CLI,cold_crystallization,Cold crystallization,7,21,0.3333333333333333,broad molecular prompts; three generations; repeated opportunities
+claude-opus-5-5,Opus CLI,crystallization_on_cooling,Cooling crystallization,1,6,0.16666666666666666,broad molecular prompts; three generations; repeated opportunities
+claude-opus-5-5,Opus CLI,melt_mediated_conversion,Melt-mediated conversion,6,15,0.4,broad molecular prompts; three generations; repeated opportunities
+claude-opus-5-5,Opus CLI,melt_sublimation_recrystallization,Melt/sublimation/recrystallization,0,3,0.0,broad molecular prompts; three generations; repeated opportunities

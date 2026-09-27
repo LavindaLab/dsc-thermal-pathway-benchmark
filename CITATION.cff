@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated manuscript."
+title: "DSC thermal-pathway reconstruction benchmark: reproducibility package"
+type: software
+authors:
+  - family-names: Lavinda
+    given-names: Olga
+    orcid: "https://orcid.org/0000-0003-3577-5984"
+version: "1.0.0"
+repository-code: "https://github.com/LavindaLab/dsc-thermal-pathway-benchmark"
+preferred-citation:
+  type: article
+  title: "Thermal pathway reconstruction exposes a reliability gap for AI-guided materials design"
+  authors:
+    - family-names: Lavinda
+      given-names: Olga
+      orcid: "https://orcid.org/0000-0003-3577-5984"
+  year: 2026

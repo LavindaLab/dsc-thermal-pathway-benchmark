@@ -1,0 +1,317 @@
+{
+  "1_partial_ambiguous_half_credit": {
+    "status": "estimable",
+    "half_credit_true_positive_equivalent": 305.0,
+    "recall": 0.5711610486891385,
+    "precision": 0.332244008714597,
+    "f1": 0.42011019283746553
+  },
+  "2_field_agnostic_temperature_error": {
+    "status": "estimable",
+    "n": 268,
+    "median_absolute_error_C": 0.0,
+    "iqr_C": [
+      0.0,
+      4.724999999999994
+    ],
+    "primary_field_compatible_n": 4,
+    "primary_median_absolute_error_C": 0.0
+  },
+  "3_exclude_protocols_with_not_reported": {
+    "status": "estimable",
+    "excluded_protocol_count": 36,
+    "included_gold_response_rows": 12,
+    "recall": 0.9166666666666666
+  },
+  "4_exclude_source_intervals_or_bounds": {
+    "status": "estimable",
+    "excluded_gold_unit_count": 19,
+    "included_gold_response_rows": 456,
+    "recall": 0.618421052631579
+  },
+  "5_equal_weight_materials": {
+    "status": "estimable",
+    "equal_material_weight_recall": 0.609457671957672,
+    "gold_event_weighted_recall": 0.5599250936329588,
+    "material_count": 30
+  },
+  "6_leave_one_material_out": {
+    "status": "estimable",
+    "full_recall": 0.5599250936329588,
+    "rows": [
+      {
+        "material_id": "mol_anthranilic_acid",
+        "recall_without_material": 0.5662878787878788,
+        "change_from_full": 0.006362785154919948
+      },
+      {
+        "material_id": "mol_barbital",
+        "recall_without_material": 0.5752032520325203,
+        "change_from_full": 0.015278158399561481
+      },
+      {
+        "material_id": "mol_benzocaine",
+        "recall_without_material": 0.5613026819923371,
+        "change_from_full": 0.00137758835937829
+      },
+      {
+        "material_id": "mol_caffeine",
+        "recall_without_material": 0.5549242424242424,
+        "change_from_full": -0.005000851208716406
+      },
+      {
+        "material_id": "mol_carbamazepine",
+        "recall_without_material": 0.5725490196078431,
+        "change_from_full": 0.012623925974884265
+      },
+      {
+        "material_id": "mol_celecoxib",
+        "recall_without_material": 0.5562015503875969,
+        "change_from_full": -0.003723543245361949
+      },
+      {
+        "material_id": "mol_chlorpropamide",
+        "recall_without_material": 0.5450980392156862,
+        "change_from_full": -0.014827054417272612
+      },
+      {
+        "material_id": "mol_dapsone",
+        "recall_without_material": 0.562015503875969,
+        "change_from_full": 0.0020904102430101545
+      },
+      {
+        "material_id": "mol_ditbuc6_btbt",
+        "recall_without_material": 0.5498084291187739,
+        "change_from_full": -0.010116664514184914
+      },
+      {
+        "material_id": "mol_felodipine",
+        "recall_without_material": 0.5574712643678161,
+        "change_from_full": -0.002453829265142704
+      },
+      {
+        "material_id": "mol_fenofibrate",
+        "recall_without_material": 0.5517241379310345,
+        "change_from_full": -0.008200955701924362
+      },
+      {
+        "material_id": "mol_flufenamic_acid",
+        "recall_without_material": 0.5647058823529412,
+        "change_from_full": 0.004780788719982332
+      },
+      {
+        "material_id": "mol_flurbiprofen",
+        "recall_without_material": 0.560077519379845,
+        "change_from_full": 0.0001524257468861201
+      },
+      {
+        "material_id": "mol_glycine",
+        "recall_without_material": 0.5568181818181818,
+        "change_from_full": -0.003106911814777069
+      },
+      {
+        "material_id": "mol_griseofulvin",
+        "recall_without_material": 0.5568627450980392,
+        "change_from_full": -0.003062348534919601
+      },
+      {
+        "material_id": "mol_indomethacin",
+        "recall_without_material": 0.5568627450980392,
+        "change_from_full": -0.003062348534919601
+      },
+      {
+        "material_id": "mol_loratadine",
+        "recall_without_material": 0.5588235294117647,
+        "change_from_full": -0.001101564221194118
+      },
+      {
+        "material_id": "mol_mefenamic_acid",
+        "recall_without_material": 0.5613026819923371,
+        "change_from_full": 0.00137758835937829
+      },
+      {
+        "material_id": "mol_nifedipine",
+        "recall_without_material": 0.5568627450980392,
+        "change_from_full": -0.003062348534919601
+      },
+      {
+        "material_id": "mol_nimesulide",
+        "recall_without_material": 0.5503875968992248,
+        "change_from_full": -0.009537496733734052
+      },
+      {
+        "material_id": "mol_paracetamol",
+        "recall_without_material": 0.563953488372093,
+        "change_from_full": 0.004028394739134189
+      },
+      {
+        "material_id": "mol_phenobarbital",
+        "recall_without_material": 0.5549242424242424,
+        "change_from_full": -0.005000851208716406
+      },
+      {
+        "material_id": "mol_piracetam",
+        "recall_without_material": 0.5647058823529412,
+        "change_from_full": 0.004780788719982332
+      },
+      {
+        "material_id": "mol_pyrazinamide",
+        "recall_without_material": 0.5613026819923371,
+        "change_from_full": 0.00137758835937829
+      },
+      {
+        "material_id": "mol_sulfamerazine",
+        "recall_without_material": 0.5549242424242424,
+        "change_from_full": -0.005000851208716406
+      },
+      {
+        "material_id": "mol_sulfathiazole",
+        "recall_without_material": 0.5734126984126984,
+        "change_from_full": 0.013487604779739537
+      },
+      {
+        "material_id": "mol_sulindac",
+        "recall_without_material": 0.5562015503875969,
+        "change_from_full": -0.003723543245361949
+      },
+      {
+        "material_id": "mol_theophylline",
+        "recall_without_material": 0.5606060606060606,
+        "change_from_full": 0.0006809669731017154
+      },
+      {
+        "material_id": "mol_tolbutamide",
+        "recall_without_material": 0.5763052208835341,
+        "change_from_full": 0.01638012725057525
+      },
+      {
+        "material_id": "mol_tolfenamic_acid",
+        "recall_without_material": 0.5581395348837209,
+        "change_from_full": -0.0017855587492379144
+      }
+    ],
+    "largest_absolute_change": {
+      "material_id": "mol_tolbutamide",
+      "recall_without_material": 0.5763052208835341,
+      "change_from_full": 0.01638012725057525
+    }
+  },
+  "7_BCa_cluster_bootstrap": {
+    "status": "estimable_with_stability_check",
+    "rows": [
+      {
+        "complexity_tier": "M1",
+        "point_estimate": 0.75,
+        "stable": false,
+        "reason": "insufficient finite bootstrap or jackknife values",
+        "low": null,
+        "high": null
+      },
+      {
+        "complexity_tier": "M2",
+        "point_estimate": 0.6578947368421053,
+        "stable": true,
+        "reason": null,
+        "low": 0.5185185185185185,
+        "high": 0.8125,
+        "bias_correction_z0": -0.007018616792533281,
+        "acceleration": 0.005702225889552772,
+        "adjusted_probabilities": [
+          0.025458187719961615,
+          0.9754613746241524
+        ]
+      },
+      {
+        "complexity_tier": "M3",
+        "point_estimate": 0.5269607843137255,
+        "stable": true,
+        "reason": null,
+        "low": 0.4523809523809524,
+        "high": 0.6145833333333334,
+        "bias_correction_z0": 0.007645290715444312,
+        "acceleration": -0.005665350086914006,
+        "adjusted_probabilities": [
+          0.024619940969437867,
+          0.9746235424394876
+        ]
+      }
+    ],
+    "primary_interval_rule": "percentile intervals retained as primary regardless of BCa stability"
+  },
+  "8_GEE_fallback_comparison": {
+    "status": "not_estimable_for_robust_inference",
+    "reason": "The random-intercept GLMM reached the optimizer stopping rule but fixed effects diverged under complete/quasi-complete separation (max |beta|=21.959); the prespecified exchangeable GEE also showed separation and an indefinite robust covariance (minimum eigenvalue=-4326.369). Model-based Wald intervals and p-values are therefore not estimable.",
+    "fit_details": {
+      "method": "logistic GEE with exchangeable material-cluster working correlation",
+      "converged": true,
+      "working_correlation": 0.21821972412226187,
+      "robust_covariance_valid": false,
+      "robust_covariance_minimum_eigenvalue": -4326.368641558849,
+      "separation_flag": true,
+      "n_rows": 534,
+      "n_material_clusters": 30
+    },
+    "coefficients": [
+      {
+        "term": "Intercept",
+        "estimate_log_odds": -3.5193806082016406,
+        "standard_error": 1.5899873894756675
+      },
+      {
+        "term": "M2",
+        "estimate_log_odds": 3.3012234510196814,
+        "standard_error": 1.6601210900302803
+      },
+      {
+        "term": "M3",
+        "estimate_log_odds": 3.091272645794621,
+        "standard_error": 1.559925231878688
+      },
+      {
+        "term": "gpt-6-luna",
+        "estimate_log_odds": 21.340653837382114,
+        "standard_error": null
+      },
+      {
+        "term": "generation_2",
+        "estimate_log_odds": 0.20709271530170814,
+        "standard_error": 0.30158261574583595
+      },
+      {
+        "term": "generation_3",
+        "estimate_log_odds": 0.3762799873537875,
+        "standard_error": 0.2589621291538545
+      },
+      {
+        "term": "terminal_melting",
+        "estimate_log_odds": 3.3248388086965575,
+        "standard_error": 0.6655175002104946
+      },
+      {
+        "term": "gpt-6-luna:M2",
+        "estimate_log_odds": -21.851823147613278,
+        "standard_error": null
+      },
+      {
+        "term": "gpt-6-luna:M3",
+        "estimate_log_odds": -21.788525864692662,
+        "standard_error": null
+      }
+    ],
+    "joint_primary_M1_M3_complexity_test": {
+      "estimable": false,
+      "reason": "robust covariance is indefinite under separation"
+    }
+  },
+  "9_exclude_model_identifier_mismatch": {
+    "status": "estimable_but_no_records_excluded",
+    "mismatch_response_count": 0,
+    "result_identical_to_primary": true
+  },
+  "10_parseable_outputs_only": {
+    "status": "estimable_selection_prone",
+    "response_count": 177,
+    "excluded_response_count": 3,
+    "recall": 0.5727969348659003
+  }
+}

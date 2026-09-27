@@ -1,0 +1,671 @@
+{
+  "schema_version": "1.0.0",
+  "study_id": "DSC-CHEMRXIV-COHORT-2026-09-26",
+  "frozen_on": "2026-09-26",
+  "counts": {
+    "molecular_polymorph": 30,
+    "polymer_control": 6,
+    "complex_material": 1,
+    "total": 37
+  },
+  "materials": [
+    {
+      "material_id": "mol_paracetamol",
+      "display_name": "Paracetamol (acetaminophen)",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Form I",
+        "Form II",
+        "Form III",
+        "melt-quenched supercooled state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_paracetamol"
+      ],
+      "blind_description": "Pure paracetamol; compare named crystalline forms and the melt-quenched state.",
+      "pooled_inference": true,
+      "retained_from_pilot": true
+    },
+    {
+      "material_id": "mol_carbamazepine",
+      "display_name": "Carbamazepine",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Forms I–IV"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_carbamazepine"
+      ],
+      "blind_description": "Pure anhydrous carbamazepine; compare crystalline Forms I–IV.",
+      "pooled_inference": true,
+      "retained_from_pilot": true
+    },
+    {
+      "material_id": "mol_indomethacin",
+      "display_name": "Indomethacin",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "alpha form",
+        "gamma form",
+        "melt-quenched amorphous state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_indomethacin"
+      ],
+      "blind_description": "Pure indomethacin; compare alpha, gamma, and melt-quenched amorphous states.",
+      "pooled_inference": true,
+      "retained_from_pilot": true
+    },
+    {
+      "material_id": "mol_sulfathiazole",
+      "display_name": "Sulfathiazole",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Forms I–V"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_sulfathiazole"
+      ],
+      "blind_description": "Pure anhydrous sulfathiazole; compare crystalline Forms I–V.",
+      "pooled_inference": true,
+      "retained_from_pilot": true
+    },
+    {
+      "material_id": "mol_caffeine",
+      "display_name": "Anhydrous caffeine",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M2",
+      "complexity_class": "one-precursor",
+      "target_forms_states": [
+        "Form I",
+        "Form II"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_caffeine"
+      ],
+      "blind_description": "Pure anhydrous caffeine; compare crystalline Forms I and II.",
+      "pooled_inference": true,
+      "retained_from_pilot": true
+    },
+    {
+      "material_id": "mol_tolfenamic_acid",
+      "display_name": "Tolfenamic acid",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Forms I, II, IX"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_tolfenamic_acid"
+      ],
+      "blind_description": "Pure tolfenamic acid; compare crystalline Forms I, II, and IX.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_griseofulvin",
+      "display_name": "Griseofulvin",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Form I",
+        "desolvated Form VI",
+        "melt-quenched amorphous state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_griseofulvin"
+      ],
+      "blind_description": "Pure griseofulvin; compare Form I, desolvated Form VI, and melt-quenched amorphous material.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_benzocaine",
+      "display_name": "Benzocaine",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M2",
+      "complexity_class": "one-precursor",
+      "target_forms_states": [
+        "Form I",
+        "Form II"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_benzocaine"
+      ],
+      "blind_description": "Pure benzocaine; compare crystalline Forms I and II.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_flufenamic_acid",
+      "display_name": "Flufenamic acid",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Form I",
+        "Form IV",
+        "melt-quenched amorphous/X state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_flufenamic_acid"
+      ],
+      "blind_description": "Pure flufenamic acid; compare named crystalline and melt-quenched states.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_barbital",
+      "display_name": "Barbital",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Forms I0, III, IV, V"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_barbital"
+      ],
+      "blind_description": "Pure barbital; compare crystalline Forms I0, III, IV, and V.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_glycine",
+      "display_name": "Glycine",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M2",
+      "complexity_class": "one-precursor",
+      "target_forms_states": [
+        "gamma form"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_glycine"
+      ],
+      "blind_description": "Pure glycine, gamma crystalline form.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_piracetam",
+      "display_name": "Piracetam",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Forms I, II, III, VI"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_piracetam"
+      ],
+      "blind_description": "Pure anhydrous piracetam; compare crystalline Forms I, II, III, and VI.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_theophylline",
+      "display_name": "Anhydrous theophylline",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M1",
+      "complexity_class": "terminal-melt-dominant",
+      "target_forms_states": [
+        "Form II"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_theophylline"
+      ],
+      "blind_description": "Pure anhydrous theophylline Form II.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_celecoxib",
+      "display_name": "Celecoxib",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "crystalline reference",
+        "melt-quenched amorphous state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_celecoxib"
+      ],
+      "blind_description": "Pure celecoxib; compare crystalline and melt-quenched amorphous material.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_tolbutamide",
+      "display_name": "Tolbutamide",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Forms IL, IH, II, V"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_tolbutamide"
+      ],
+      "blind_description": "Pure tolbutamide; compare low- and high-temperature Form I and Forms II and V.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_loratadine",
+      "display_name": "Loratadine",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Form A",
+        "Form B",
+        "melt-quenched amorphous state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_loratadine"
+      ],
+      "blind_description": "Pure loratadine; compare Forms A and B and melt-quenched amorphous material.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_flurbiprofen",
+      "display_name": "Flurbiprofen",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Forms I, II, III"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_flurbiprofen"
+      ],
+      "blind_description": "Pure flurbiprofen; compare crystalline Forms I, II, and III.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_ditbuc6_btbt",
+      "display_name": "ditBuC6-BTBT",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M2",
+      "complexity_class": "one-precursor",
+      "target_forms_states": [
+        "Form II",
+        "high-temperature Form III"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_ditbuc6_btbt"
+      ],
+      "blind_description": "Pure ditBuC6-BTBT; compare crystalline Forms II and III.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_nifedipine",
+      "display_name": "Nifedipine",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "alpha form",
+        "beta form",
+        "melt-quenched amorphous state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_nifedipine"
+      ],
+      "blind_description": "Pure nifedipine; compare alpha, beta, and melt-quenched amorphous states.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_nimesulide",
+      "display_name": "Nimesulide",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Form I",
+        "Form II",
+        "vitrified state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_nimesulide"
+      ],
+      "blind_description": "Pure nimesulide; compare Forms I and II and the vitrified state.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_fenofibrate",
+      "display_name": "Fenofibrate",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M2",
+      "complexity_class": "one-precursor",
+      "target_forms_states": [
+        "as-received crystalline state",
+        "melt-vitrified state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_fenofibrate"
+      ],
+      "blind_description": "Pure fenofibrate; compare as-received crystalline and melt-vitrified states.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_felodipine",
+      "display_name": "Felodipine",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M2",
+      "complexity_class": "one-precursor",
+      "target_forms_states": [
+        "Form I",
+        "melt-quenched amorphous state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_felodipine"
+      ],
+      "blind_description": "Pure felodipine; compare Form I and melt-quenched amorphous material.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_sulindac",
+      "display_name": "Sulindac",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "Forms I, II, IV"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_sulindac"
+      ],
+      "blind_description": "Pure sulindac; compare crystalline Forms I, II, and IV.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_anthranilic_acid",
+      "display_name": "Anthranilic acid",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M2",
+      "complexity_class": "one-precursor",
+      "target_forms_states": [
+        "Form I",
+        "Form III"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_anthranilic_acid"
+      ],
+      "blind_description": "Pure anthranilic acid; compare crystalline Forms I and III.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_mefenamic_acid",
+      "display_name": "Mefenamic acid",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M2",
+      "complexity_class": "one-precursor",
+      "target_forms_states": [
+        "Form I",
+        "Form II"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_mefenamic_acid"
+      ],
+      "blind_description": "Pure mefenamic acid; compare crystalline Forms I and II.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_sulfamerazine",
+      "display_name": "Sulfamerazine",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M2",
+      "complexity_class": "one-precursor",
+      "target_forms_states": [
+        "Form I",
+        "Form II"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_sulfamerazine"
+      ],
+      "blind_description": "Pure sulfamerazine; compare crystalline Forms I and II.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_pyrazinamide",
+      "display_name": "Pyrazinamide",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M2",
+      "complexity_class": "one-precursor",
+      "target_forms_states": [
+        "alpha form",
+        "gamma form"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_pyrazinamide"
+      ],
+      "blind_description": "Pure pyrazinamide; compare alpha and gamma crystalline forms.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_dapsone",
+      "display_name": "Dapsone",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M2",
+      "complexity_class": "one-precursor",
+      "target_forms_states": [
+        "Form II",
+        "Form III"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_dapsone"
+      ],
+      "blind_description": "Pure anhydrous dapsone; compare crystalline Forms II and III.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_chlorpropamide",
+      "display_name": "Chlorpropamide",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M3",
+      "complexity_class": "sequential-or-condition-dependent",
+      "target_forms_states": [
+        "commercial crystalline starting state (form not reported)",
+        "alpha form",
+        "Form C",
+        "melt-derived state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_chlorpropamide"
+      ],
+      "blind_description": "Pure chlorpropamide; compare the listed commercial crystalline, alpha, Form C, and melt-derived states.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "mol_phenobarbital",
+      "display_name": "Phenobarbital",
+      "stratum": "molecular_polymorph",
+      "chemical_specification": "chemically defined pure small molecule; anhydrous unless the target state says otherwise",
+      "complexity_tier": "M1",
+      "complexity_class": "terminal-melt-dominant",
+      "target_forms_states": [
+        "Form I"
+      ],
+      "protocol_profile_ids": [
+        "protocol_mol_phenobarbital"
+      ],
+      "blind_description": "Pure phenobarbital Form I.",
+      "pooled_inference": true,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "poly_atactic_ps",
+      "display_name": "Atactic polystyrene, sample R",
+      "stratum": "polymer_control",
+      "chemical_specification": "Dow GP680E; linear atactic PS; no additives; Mw 216000 g/mol; PDI 2.54",
+      "complexity_tier": "P1",
+      "complexity_class": "predominantly-amorphous-Tg",
+      "target_forms_states": [
+        "source-specified linear atactic PS"
+      ],
+      "protocol_profile_ids": [
+        "protocol_poly_atactic_ps"
+      ],
+      "blind_description": "Linear atactic polystyrene, Dow GP680E base polymer, additive-free; report protocol-dependent thermal events.",
+      "pooled_inference": false,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "poly_atactic_pmma",
+      "display_name": "Atactic PMMA, Chi-Mei sample",
+      "stratum": "polymer_control",
+      "chemical_specification": "Chi-Mei aPMMA; Mw 53500 g/mol; tacticity fraction not reported",
+      "complexity_tier": "P1",
+      "complexity_class": "predominantly-amorphous-Tg",
+      "target_forms_states": [
+        "source-specified atactic PMMA"
+      ],
+      "protocol_profile_ids": [
+        "protocol_poly_atactic_pmma"
+      ],
+      "blind_description": "Atactic poly(methyl methacrylate), Chi-Mei sample, Mw 53,500 g/mol; report protocol-dependent thermal events.",
+      "pooled_inference": false,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "poly_pet",
+      "display_name": "Virgin PET, PETv",
+      "stratum": "polymer_control",
+      "chemical_specification": "Selenis BR35 virgin pellets; intrinsic viscosity 0.59 dL/g",
+      "complexity_tier": "P2",
+      "complexity_class": "Tg-cold-crystallization-melting",
+      "target_forms_states": [
+        "Selenis BR35 second-heating state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_poly_pet"
+      ],
+      "blind_description": "Virgin PET pellets, Selenis BR35, intrinsic viscosity 0.59 dL/g; report the stated heating/cooling/heating protocol.",
+      "pooled_inference": false,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "poly_plla",
+      "display_name": "PLLA, Ingeo 4043D",
+      "stratum": "polymer_control",
+      "chemical_specification": "NatureWorks Ingeo 4043D; approximately 2% D-isomer; neat extrudate",
+      "complexity_tier": "P2",
+      "complexity_class": "Tg-cold-crystallization-melting",
+      "target_forms_states": [
+        "neat extruded PLLA second-heating state"
+      ],
+      "protocol_profile_ids": [
+        "protocol_poly_plla"
+      ],
+      "blind_description": "NatureWorks Ingeo 4043D PLLA, approximately 2% D-isomer, processed and history-erased as specified.",
+      "pooled_inference": false,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "poly_ipp",
+      "display_name": "Calcium-pimelate-nucleated isotactic polypropylene",
+      "stratum": "polymer_control",
+      "chemical_specification": "Novolen 1100N iPP with 0.2 wt% calcium pimelate; M 250 kg/mol; Mw/Mn 5.0",
+      "complexity_tier": "P3",
+      "complexity_class": "semicrystalline-or-polymorphic",
+      "target_forms_states": [
+        "PPi_02 nucleated iPP"
+      ],
+      "protocol_profile_ids": [
+        "protocol_poly_ipp"
+      ],
+      "blind_description": "Novolen 1100N isotactic polypropylene containing 0.2 wt% calcium pimelate; this is a nucleated polymer system.",
+      "pooled_inference": false,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "poly_pvdf",
+      "display_name": "Alpha-PVDF, Kynar K-761",
+      "stratum": "polymer_control",
+      "chemical_specification": "Kynar K-761 PVDF homopolymer powder",
+      "complexity_tier": "P3",
+      "complexity_class": "semicrystalline-or-polymorphic",
+      "target_forms_states": [
+        "melt-crystallized alpha-PVDF"
+      ],
+      "protocol_profile_ids": [
+        "protocol_poly_pvdf"
+      ],
+      "blind_description": "Kynar K-761 PVDF homopolymer powder after the stated melt-crystallization history.",
+      "pooled_inference": false,
+      "retained_from_pilot": false
+    },
+    {
+      "material_id": "complex_cocoa_butter",
+      "display_name": "Ivory Coast factory cocoa butter",
+      "stratum": "complex_material",
+      "chemical_specification": "Ivory Coast factory cocoa butter; 97.0% TAG, minor DAG/MAG/free fatty acid/phosphatide fractions",
+      "complexity_tier": "C1",
+      "complexity_class": "semicrystalline-or-polymorphic",
+      "target_forms_states": [
+        "rapidly quenched cocoa butter"
+      ],
+      "protocol_profile_ids": [
+        "protocol_complex_cocoa_butter"
+      ],
+      "blind_description": "Natural Ivory Coast cocoa butter, a multicomponent triacylglycerol fat; reconstruct the protocol-defined heating pathway, not a pure-compound melting point.",
+      "pooled_inference": false,
+      "retained_from_pilot": true
+    }
+  ]
+}

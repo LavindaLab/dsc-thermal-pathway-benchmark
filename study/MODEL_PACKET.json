@@ -1,0 +1,601 @@
+{
+  "schema_version": "1.0.0",
+  "study_id": "DSC-CHEMRXIV-COHORT-2026-09-26",
+  "frozen_on": "2026-09-26",
+  "blinding_statement": "This file contains no literature citation, source locator, reference event value, gold event identity, expected event count, or literature-derived pathway hint.",
+  "api_plan": {
+    "endpoint": "POST /v1/responses",
+    "models": [
+      "gpt-5.6-luna",
+      "gpt-6-luna"
+    ],
+    "generations_per_model_material": 3,
+    "planned_requests": 222,
+    "service_tier": "default",
+    "store": false,
+    "tools": [],
+    "retrieval": false,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "text": {
+      "verbosity": "medium",
+      "format": {
+        "type": "json_schema",
+        "name": "dsc_event_map",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "material_id",
+            "schematic_reconstruction",
+            "protocol_assumptions",
+            "events"
+          ],
+          "properties": {
+            "material_id": {
+              "type": "string"
+            },
+            "schematic_reconstruction": {
+              "type": "boolean",
+              "const": true
+            },
+            "protocol_assumptions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "events": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "sequence",
+                  "starting_form_state",
+                  "product_form_state",
+                  "event_type",
+                  "direction",
+                  "temperature",
+                  "confidence",
+                  "note"
+                ],
+                "properties": {
+                  "sequence": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "starting_form_state": {
+                    "type": "string"
+                  },
+                  "product_form_state": {
+                    "type": "string"
+                  },
+                  "event_type": {
+                    "type": "string",
+                    "enum": [
+                      "glass_transition",
+                      "crystallization_on_cooling",
+                      "cold_crystallization",
+                      "solid_solid_transition",
+                      "melt_mediated_conversion",
+                      "melt_sublimation_recrystallization",
+                      "melting",
+                      "recrystallization",
+                      "other"
+                    ]
+                  },
+                  "direction": {
+                    "type": "string",
+                    "enum": [
+                      "endothermic",
+                      "exothermic",
+                      "baseline_shift",
+                      "mixed",
+                      "not_reported"
+                    ]
+                  },
+                  "temperature": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "kind",
+                      "value_C",
+                      "lower_C",
+                      "upper_C",
+                      "bound"
+                    ],
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "enum": [
+                          "onset",
+                          "midpoint",
+                          "peak",
+                          "range",
+                          "bound",
+                          "not_reported"
+                        ]
+                      },
+                      "value_C": {
+                        "type": [
+                          "number",
+                          "null"
+                        ]
+                      },
+                      "lower_C": {
+                        "type": [
+                          "number",
+                          "null"
+                        ]
+                      },
+                      "upper_C": {
+                        "type": [
+                          "number",
+                          "null"
+                        ]
+                      },
+                      "bound": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    }
+                  },
+                  "confidence": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "max_output_tokens": 4000,
+    "temperature_parameter": "omitted from the API request because support may differ across reasoning models; every arm otherwise uses the same frozen request template",
+    "randomization": {
+      "seed": 20260926,
+      "rule": "Within each replicate block, randomize model–material order and balance each arm across execution quartiles."
+    },
+    "retry_policy": {
+      "max_attempts": 2,
+      "retryable_http_statuses": [
+        408,
+        409,
+        429,
+        500,
+        502,
+        503,
+        504
+      ],
+      "retry_transport_errors": true,
+      "backoff_seconds_after_first_failure": 2,
+      "request_timeout_seconds": 180
+    },
+    "required_response_ledger_fields": [
+      "prompt_text",
+      "prompt_sha256",
+      "requested_model",
+      "returned_model",
+      "response_id",
+      "timestamp_utc",
+      "settings",
+      "usage",
+      "completion_state",
+      "incomplete_reason",
+      "error",
+      "attempt_number",
+      "raw_output"
+    ]
+  },
+  "packets": [
+    {
+      "material_id": "mol_paracetamol",
+      "display_name": "Paracetamol (acetaminophen)",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form I",
+        "Form II",
+        "Form III",
+        "melt-quenched supercooled state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Paracetamol (acetaminophen)\nMaterial description: Pure paracetamol; compare named crystalline forms and the melt-quenched state.\nTarget starting forms/states: Form I; Form II; Form III; melt-quenched supercooled state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "bed7b3c3a07aafccfb72747dcfb06e3cbddab453c196b699c47f5bf9e19d8925"
+    },
+    {
+      "material_id": "mol_carbamazepine",
+      "display_name": "Carbamazepine",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Forms I–IV"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Carbamazepine\nMaterial description: Pure anhydrous carbamazepine; compare crystalline Forms I–IV.\nTarget starting forms/states: Forms I–IV\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "cd8e02c8d2cc8c447b5099ee622117c8aea80ed1a600d810e2050a5c17876724"
+    },
+    {
+      "material_id": "mol_indomethacin",
+      "display_name": "Indomethacin",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "alpha form",
+        "gamma form",
+        "melt-quenched amorphous state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Indomethacin\nMaterial description: Pure indomethacin; compare alpha, gamma, and melt-quenched amorphous states.\nTarget starting forms/states: alpha form; gamma form; melt-quenched amorphous state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "6d20dafc652ccd83943aea3b65c5332e039597057d888e00a95c916aa6de5145"
+    },
+    {
+      "material_id": "mol_sulfathiazole",
+      "display_name": "Sulfathiazole",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Forms I–V"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Sulfathiazole\nMaterial description: Pure anhydrous sulfathiazole; compare crystalline Forms I–V.\nTarget starting forms/states: Forms I–V\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "5aa8fc7e5e1f8ee62c757e9acfb451cdcac26b98fdb005ad5ca4bc3751bd2a69"
+    },
+    {
+      "material_id": "mol_caffeine",
+      "display_name": "Anhydrous caffeine",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form I",
+        "Form II"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Anhydrous caffeine\nMaterial description: Pure anhydrous caffeine; compare crystalline Forms I and II.\nTarget starting forms/states: Form I; Form II\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "ad0c7e2663f28d0dd5ec907e9da734ff09910b7763bc6e2a978c02d8519743ee"
+    },
+    {
+      "material_id": "mol_tolfenamic_acid",
+      "display_name": "Tolfenamic acid",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Forms I, II, IX"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Tolfenamic acid\nMaterial description: Pure tolfenamic acid; compare crystalline Forms I, II, and IX.\nTarget starting forms/states: Forms I, II, IX\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "7fa0246740592749bf32502a8777285c156972b0f4735c6c3cca28cf2124209e"
+    },
+    {
+      "material_id": "mol_griseofulvin",
+      "display_name": "Griseofulvin",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form I",
+        "desolvated Form VI",
+        "melt-quenched amorphous state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Griseofulvin\nMaterial description: Pure griseofulvin; compare Form I, desolvated Form VI, and melt-quenched amorphous material.\nTarget starting forms/states: Form I; desolvated Form VI; melt-quenched amorphous state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "af7225c4502e3564059d32f627919f85cf36ac8ab7105ba645a782712103c8b5"
+    },
+    {
+      "material_id": "mol_benzocaine",
+      "display_name": "Benzocaine",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form I",
+        "Form II"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Benzocaine\nMaterial description: Pure benzocaine; compare crystalline Forms I and II.\nTarget starting forms/states: Form I; Form II\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "86429865775ca8e9668f7947b14968beb1bb64e9c6608ad66b1961c83ae1f714"
+    },
+    {
+      "material_id": "mol_flufenamic_acid",
+      "display_name": "Flufenamic acid",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form I",
+        "Form IV",
+        "melt-quenched amorphous/X state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Flufenamic acid\nMaterial description: Pure flufenamic acid; compare named crystalline and melt-quenched states.\nTarget starting forms/states: Form I; Form IV; melt-quenched amorphous/X state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "ac889b48a4746d87f49cf1a7a65a5defe8bc61f4d62ba1266763948bef029dbf"
+    },
+    {
+      "material_id": "mol_barbital",
+      "display_name": "Barbital",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Forms I0, III, IV, V"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Barbital\nMaterial description: Pure barbital; compare crystalline Forms I0, III, IV, and V.\nTarget starting forms/states: Forms I0, III, IV, V\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "a7c9863b30c1a8821a5820f43cd13a579f8284189c6b4fff517edf863145e0ff"
+    },
+    {
+      "material_id": "mol_glycine",
+      "display_name": "Glycine",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "gamma form"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Glycine\nMaterial description: Pure glycine, gamma crystalline form.\nTarget starting forms/states: gamma form\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "b916429c1ecd26fdb3a7fcfdf8d1b097ab8cd769451717cc770711b3bea08d6a"
+    },
+    {
+      "material_id": "mol_piracetam",
+      "display_name": "Piracetam",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Forms I, II, III, VI"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Piracetam\nMaterial description: Pure anhydrous piracetam; compare crystalline Forms I, II, III, and VI.\nTarget starting forms/states: Forms I, II, III, VI\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "8562640c97c48bd734af8248d9718a06dfac9b81a2b65d8b54d9b0625a2b4609"
+    },
+    {
+      "material_id": "mol_theophylline",
+      "display_name": "Anhydrous theophylline",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form II"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Anhydrous theophylline\nMaterial description: Pure anhydrous theophylline Form II.\nTarget starting forms/states: Form II\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "81c5147a5d91014d4c9a1d5b43e74bf32d7d8838e42422a8aacdc2b6a3844812"
+    },
+    {
+      "material_id": "mol_celecoxib",
+      "display_name": "Celecoxib",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "crystalline reference",
+        "melt-quenched amorphous state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Celecoxib\nMaterial description: Pure celecoxib; compare crystalline and melt-quenched amorphous material.\nTarget starting forms/states: crystalline reference; melt-quenched amorphous state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "3c9cbba3fac89dd9d9c70ab8d45914520ca8dc7f29024d25ccff733a0a993b47"
+    },
+    {
+      "material_id": "mol_tolbutamide",
+      "display_name": "Tolbutamide",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Forms IL, IH, II, V"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Tolbutamide\nMaterial description: Pure tolbutamide; compare low- and high-temperature Form I and Forms II and V.\nTarget starting forms/states: Forms IL, IH, II, V\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "a8e59b8e4dd85f84aa98879b4fd030c9c6039d0cc58e017ea549f4c4efba9b9b"
+    },
+    {
+      "material_id": "mol_loratadine",
+      "display_name": "Loratadine",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form A",
+        "Form B",
+        "melt-quenched amorphous state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Loratadine\nMaterial description: Pure loratadine; compare Forms A and B and melt-quenched amorphous material.\nTarget starting forms/states: Form A; Form B; melt-quenched amorphous state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "b64fbee25d9901c56e0e42fb0d599e0cb9596bf10780af0824dd515a90deb8bf"
+    },
+    {
+      "material_id": "mol_flurbiprofen",
+      "display_name": "Flurbiprofen",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Forms I, II, III"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Flurbiprofen\nMaterial description: Pure flurbiprofen; compare crystalline Forms I, II, and III.\nTarget starting forms/states: Forms I, II, III\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "e38be4f51f072686c01884cd5388a37c8fac9f573d0744fa86e8cbe7851b1854"
+    },
+    {
+      "material_id": "mol_ditbuc6_btbt",
+      "display_name": "ditBuC6-BTBT",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form II",
+        "high-temperature Form III"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: ditBuC6-BTBT\nMaterial description: Pure ditBuC6-BTBT; compare crystalline Forms II and III.\nTarget starting forms/states: Form II; high-temperature Form III\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "bff5cd8c96c136bde5615b0e154911f83c3ed8c0a40b30d0ad07e6677a8eafcd"
+    },
+    {
+      "material_id": "mol_nifedipine",
+      "display_name": "Nifedipine",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "alpha form",
+        "beta form",
+        "melt-quenched amorphous state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Nifedipine\nMaterial description: Pure nifedipine; compare alpha, beta, and melt-quenched amorphous states.\nTarget starting forms/states: alpha form; beta form; melt-quenched amorphous state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "a8b6a79920d449389f59e6a26f09bb52afe50e07435f4d96b49d004b76b32951"
+    },
+    {
+      "material_id": "mol_nimesulide",
+      "display_name": "Nimesulide",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form I",
+        "Form II",
+        "vitrified state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Nimesulide\nMaterial description: Pure nimesulide; compare Forms I and II and the vitrified state.\nTarget starting forms/states: Form I; Form II; vitrified state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "f41d30feba6ea8a5e671c282fd46fb6d6396aec71a0c36f883405bf33276bdda"
+    },
+    {
+      "material_id": "mol_fenofibrate",
+      "display_name": "Fenofibrate",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "as-received crystalline state",
+        "melt-vitrified state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Fenofibrate\nMaterial description: Pure fenofibrate; compare as-received crystalline and melt-vitrified states.\nTarget starting forms/states: as-received crystalline state; melt-vitrified state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "10b9a74ae2c347bf6954ed9249f32cd2bb1d6b55ea274a455642717a5e5fa8f9"
+    },
+    {
+      "material_id": "mol_felodipine",
+      "display_name": "Felodipine",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form I",
+        "melt-quenched amorphous state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Felodipine\nMaterial description: Pure felodipine; compare Form I and melt-quenched amorphous material.\nTarget starting forms/states: Form I; melt-quenched amorphous state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "9f1a73bc78595eb585db6c74dc7d07ef236df81b58ab4a0e9e8e8034b9d2a911"
+    },
+    {
+      "material_id": "mol_sulindac",
+      "display_name": "Sulindac",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Forms I, II, IV"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Sulindac\nMaterial description: Pure sulindac; compare crystalline Forms I, II, and IV.\nTarget starting forms/states: Forms I, II, IV\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "0c536cc04a03b2d1a6dcfe13408546e7da5c6c2ada299ecdf2af9a72ab17378e"
+    },
+    {
+      "material_id": "mol_anthranilic_acid",
+      "display_name": "Anthranilic acid",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form I",
+        "Form III"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Anthranilic acid\nMaterial description: Pure anthranilic acid; compare crystalline Forms I and III.\nTarget starting forms/states: Form I; Form III\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "1d61c8a09bc2f1ca5e85ef3152f1ba4d51875da038403d544291f4254c72dd05"
+    },
+    {
+      "material_id": "mol_mefenamic_acid",
+      "display_name": "Mefenamic acid",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form I",
+        "Form II"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Mefenamic acid\nMaterial description: Pure mefenamic acid; compare crystalline Forms I and II.\nTarget starting forms/states: Form I; Form II\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "7b6bb24be2fedec749b12b368424b3e2851b75376ad3d36dd92c107ed19cf9ef"
+    },
+    {
+      "material_id": "mol_sulfamerazine",
+      "display_name": "Sulfamerazine",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form I",
+        "Form II"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Sulfamerazine\nMaterial description: Pure sulfamerazine; compare crystalline Forms I and II.\nTarget starting forms/states: Form I; Form II\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "55ef2401dc8fa39956fb2347101a6cd777934d9738cb05674464a73bf062dfc2"
+    },
+    {
+      "material_id": "mol_pyrazinamide",
+      "display_name": "Pyrazinamide",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "alpha form",
+        "gamma form"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Pyrazinamide\nMaterial description: Pure pyrazinamide; compare alpha and gamma crystalline forms.\nTarget starting forms/states: alpha form; gamma form\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "5dc121ac05eaf7e5168b09781dd9e848859f816abb6fbd21c9b7d7419395e4b3"
+    },
+    {
+      "material_id": "mol_dapsone",
+      "display_name": "Dapsone",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form II",
+        "Form III"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Dapsone\nMaterial description: Pure anhydrous dapsone; compare crystalline Forms II and III.\nTarget starting forms/states: Form II; Form III\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "f15c01648941fe78c05cf090cb84ca472c2663cceacf445d0fbcfbe10d840570"
+    },
+    {
+      "material_id": "mol_chlorpropamide",
+      "display_name": "Chlorpropamide",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "commercial crystalline starting state (form not reported)",
+        "alpha form",
+        "Form C",
+        "melt-derived state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Chlorpropamide\nMaterial description: Pure chlorpropamide; compare the listed commercial crystalline, alpha, Form C, and melt-derived states.\nTarget starting forms/states: commercial crystalline starting state (form not reported); alpha form; Form C; melt-derived state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "f6af9e64b7c9aaa870e38a5a08af6ff54d5bc3745e37234ef41a9400c5e5bf3c"
+    },
+    {
+      "material_id": "mol_phenobarbital",
+      "display_name": "Phenobarbital",
+      "stratum": "molecular_polymorph",
+      "target_forms_states": [
+        "Form I"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Phenobarbital\nMaterial description: Pure phenobarbital Form I.\nTarget starting forms/states: Form I\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "cf748da0806e34bcda930762fb1f6d7b0fc045d916d3f3e4ffa6ad8f4031aa59"
+    },
+    {
+      "material_id": "poly_atactic_ps",
+      "display_name": "Atactic polystyrene, sample R",
+      "stratum": "polymer_control",
+      "target_forms_states": [
+        "source-specified linear atactic PS"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Atactic polystyrene, sample R\nMaterial description: Linear additive-free atactic polystyrene, Dow GP680E base polymer.\nTarget starting forms/states: source-specified linear atactic PS\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "e56ba8b054dbad4c5d9ad74e7b18b8a36d3cc68d1b6b9698d615d22e0e1b1118"
+    },
+    {
+      "material_id": "poly_atactic_pmma",
+      "display_name": "Atactic PMMA, Chi-Mei sample",
+      "stratum": "polymer_control",
+      "target_forms_states": [
+        "source-specified atactic PMMA"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Atactic PMMA, Chi-Mei sample\nMaterial description: Atactic poly(methyl methacrylate), Chi-Mei sample.\nTarget starting forms/states: source-specified atactic PMMA\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "f54eeb894bdebfca30f27b72fcb8526b903f92b9acc34581d39969dcf341fa99"
+    },
+    {
+      "material_id": "poly_pet",
+      "display_name": "Virgin PET, PETv",
+      "stratum": "polymer_control",
+      "target_forms_states": [
+        "Selenis BR35 second-heating state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Virgin PET, PETv\nMaterial description: Virgin PET pellets, Selenis BR35.\nTarget starting forms/states: Selenis BR35 second-heating state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "6b7a14be4443c8ee8f2f5cfbc01a16909021925bdf17c03c8d672da977df1fc2"
+    },
+    {
+      "material_id": "poly_plla",
+      "display_name": "PLLA, Ingeo 4043D",
+      "stratum": "polymer_control",
+      "target_forms_states": [
+        "neat extruded PLLA second-heating state"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: PLLA, Ingeo 4043D\nMaterial description: NatureWorks Ingeo 4043D PLLA.\nTarget starting forms/states: neat extruded PLLA second-heating state\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "26fdf39cf96a5296332678fee343e617e40853fe3f349eb173bb8f8c524e9bb2"
+    },
+    {
+      "material_id": "poly_ipp",
+      "display_name": "Calcium-pimelate-nucleated isotactic polypropylene",
+      "stratum": "polymer_control",
+      "target_forms_states": [
+        "PPi_02 nucleated iPP"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Calcium-pimelate-nucleated isotactic polypropylene\nMaterial description: Calcium-pimelate-nucleated isotactic polypropylene, PPi_02.\nTarget starting forms/states: PPi_02 nucleated iPP\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "d8f0641bfdb579f03e5ac96978f76284a745962b260167899ee131c328a83e23"
+    },
+    {
+      "material_id": "poly_pvdf",
+      "display_name": "Alpha-PVDF, Kynar K-761",
+      "stratum": "polymer_control",
+      "target_forms_states": [
+        "melt-crystallized alpha-PVDF"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Alpha-PVDF, Kynar K-761\nMaterial description: Kynar K-761 PVDF homopolymer powder after melt crystallization.\nTarget starting forms/states: melt-crystallized alpha-PVDF\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "2b7062e933a8812eaa6f4abe0db7b09a4a0838b74c781c8581297984a137d952"
+    },
+    {
+      "material_id": "complex_cocoa_butter",
+      "display_name": "Ivory Coast factory cocoa butter",
+      "stratum": "complex_material",
+      "target_forms_states": [
+        "rapidly quenched cocoa butter"
+      ],
+      "prompt_text": "You are reconstructing a schematic differential-scanning-calorimetry (DSC) event map from prior scientific knowledge. This is not a measured DSC trace.\n\nMaterial: Ivory Coast factory cocoa butter\nMaterial description: Natural Ivory Coast cocoa butter, a multicomponent triacylglycerol fat rather than a pure compound.\nTarget starting forms/states: rapidly quenched cocoa butter\n\nFor each target starting form/state, predict the conventional DSC events that could be observed on heating or cooling under an explicitly stated reasonable protocol. Include glass transition, crystallization, solid–solid transformation, melt-mediated conversion, and melting only when scientifically applicable. Keep events in sequence. Do not browse, use tools, cite literature, or generate pointwise heat-flow data.\n\nReturn only JSON matching the supplied schema. For every event state the starting form/state, product form/state, event type, thermal direction, temperature-field convention (onset, midpoint, peak, range, bound, or not_reported), Celsius value/range/bound when you can defend one, confidence from 0 to 1, and a concise protocol assumption. Express uncertainty directly; do not convert it into false precision. Do not describe a model-produced reconstruction as measured data.",
+      "prompt_sha256": "a8b039a0ec9dc414c30245648e3648db3c63f5d2d15981345109944805822089"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "description": "Independent row-level aggregation for submission-only descriptive summaries.",
+  "source_hashes": {
+    "data/original/gold_outcomes.csv": "e5b6bcdcacb52d8e9d812d9a9bc729e5291ae60658f1f35fab098904536df8e6",
+    "data/original/event_matches.csv": "b24b6b1c9b230446caca57ca907335f4e4477b3c841e2aedc5513d506abe6460",
+    "data/extension/gold_outcomes.csv": "23054b6722347ca911d9dea995178205084551f3da498b5e9bb333caf810db36",
+    "data/extension/event_matches.csv": "ea1677c9d532a6dd3efd4d1ead46b104e11c527d7ed1319f6a2c3807019c9319",
+    "data/extension/estimates.json": "e5e9494303f60d98951ac293a07565ba476718fe5c11e70bd5b6f96a35390a18",
+    "study/literature_reference.json": "b09a3b1f2e76e7410cf1ab4452fffbad9e0f195a49c41ad9e03dbdb733872e84"
+  },
+  "checks": [
+    {
+      "name": "event_family_counts::gpt-5.6-luna",
+      "pass": true,
+      "observed_numerators": [
+        93,
+        43,
+        8,
+        13,
+        1,
+        0,
+        0
+      ],
+      "observed_denominators": [
+        108,
+        90,
+        24,
+        21,
+        6,
+        15,
+        3
+      ]
+    },
+    {
+      "name": "event_family_counts::gpt-6-luna",
+      "pass": true,
+      "observed_numerators": [
+        101,
+        26,
+        4,
+        6,
+        2,
+        2,
+        0
+      ],
+      "observed_denominators": [
+        108,
+        90,
+        24,
+        21,
+        6,
+        15,
+        3
+      ]
+    },
+    {
+      "name": "event_family_counts::gpt-5.6-sol",
+      "pass": true,
+      "observed_numerators": [
+        97,
+        35,
+        19,
+        4,
+        0,
+        10,
+        0
+      ],
+      "observed_denominators": [
+        108,
+        90,
+        24,
+        21,
+        6,
+        15,
+        3
+      ]
+    },
+    {
+      "name": "event_family_counts::claude-opus-5-5",
+      "pass": true,
+      "observed_numerators": [
+        91,
+        64,
+        24,
+        7,
+        1,
+        6,
+        0
+      ],
+      "observed_denominators": [
+        108,
+        90,
+        24,
+        21,
+        6,
+        15,
+        3
+      ]
+    },
+    {
+      "name": "conditional_coverage::gpt-5.6-sol::terminal_melting",
+      "pass": true,
+      "observed": [
+        97,
+        97,
+        7,
+        0.4000000000000057,
+        14.0
+      ],
+      "expected": [
+        97,
+        97,
+        7,
+        0.4,
+        14.0
+      ]
+    },
+    {
+      "name": "conditional_coverage::gpt-5.6-sol::non_melting_pathway",
+      "pass": true,
+      "observed": [
+        68,
+        65,
+        11,
+        0.0,
+        15.0
+      ],
+      "expected": [
+        68,
+        65,
+        11,
+        0.0,
+        15.0
+      ]
+    },
+    {
+      "name": "conditional_coverage::claude-opus-5-5::terminal_melting",
+      "pass": true,
+      "observed": [
+        91,
+        91,
+        58,
+        1.0,
+        24.42
+      ],
+      "expected": [
+        91,
+        91,
+        58,
+        1.0,
+        24.42
+      ]
+    },
+    {
+      "name": "conditional_coverage::claude-opus-5-5::non_melting_pathway",
+      "pass": true,
+      "observed": [
+        102,
+        78,
+        22,
+        0.0,
+        8.100000000000001
+      ],
+      "expected": [
+        102,
+        78,
+        22,
+        0.0,
+        8.1
+      ]
+    }
+  ]
+}

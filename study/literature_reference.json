@@ -1,0 +1,3924 @@
+{
+  "schema_version": "1.0.0",
+  "study_id": "DSC-CHEMRXIV-COHORT-2026-09-26",
+  "frozen_on": "2026-09-26",
+  "interpretation": "Source-specific DSC event anchors. Temperatures are not universal material constants. Event identity is scored before temperature, and repeated post-conversion melts share a scoring_unit_id.",
+  "sources": [
+    {
+      "source_id": "src_paracetamol",
+      "citation": "Kauffman et al. 2008",
+      "doi": "10.1016/j.jpba.2008.09.008",
+      "url": "https://doi.org/10.1016/j.jpba.2008.09.008",
+      "locator_scope": "Methods; Results; Figures 2–3",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_carbamazepine",
+      "citation": "Clout et al. 2018",
+      "doi": "10.1002/chem.201802368",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6175174/",
+      "locator_scope": "Experimental DSC–XRD; Figures 6, 9, and 11; CBZ II results",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_indomethacin",
+      "citation": "Štukelj et al. 2020",
+      "doi": "10.5599/admet.839",
+      "url": "https://doi.org/10.5599/admet.839",
+      "locator_scope": "Experimental DSC; Results; Figure 2",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_sulfathiazole",
+      "citation": "Zeitler et al. 2006",
+      "doi": "10.1002/jps.20719",
+      "url": "https://orbit.dtu.dk/files/5618204/jpharmsci_sulfathiazole_final_ramancorr.pdf",
+      "locator_scope": "Experimental §2.7, manuscript p. 6; Results §3.2, pp. 11–12; Figure 4; Table 2, p. 28",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_caffeine",
+      "citation": "Lehto and Laine 1998",
+      "doi": "10.1016/S0040-6031(98)00363-3",
+      "url": "https://doi.org/10.1016/S0040-6031(98)00363-3",
+      "locator_scope": "Experimental DSC; Figure reporting the Form II→I onset; Results",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_tolfenamic",
+      "citation": "Tolfenamic-acid polymorph study 2021",
+      "doi": "10.1039/D1CE00343G",
+      "url": "https://doi.org/10.1039/D1CE00343G",
+      "locator_scope": "§3.4, Figure 6 and Table 2",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_griseo_crystal",
+      "citation": "Griseofulvin Form VI study 2023",
+      "doi": "10.1021/acs.cgd.3c01011",
+      "url": "https://doi.org/10.1021/acs.cgd.3c01011",
+      "locator_scope": "Experimental thermal analysis; form-VI DSC figure/table",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_griseo_glass",
+      "citation": "Baird et al. 2010",
+      "doi": "10.1002/jps.22197",
+      "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/jps.22197",
+      "locator_scope": "Methods pp. 3790–3791; Tables 1–3 and 5, pp. 3792–3796",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_benzocaine",
+      "citation": "Benzocaine polymorph study 2023",
+      "doi": "10.3390/pharmaceutics15051549",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10223642/",
+      "locator_scope": "DSC methods; Results; form-I/form-II thermograms",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_flufenamic",
+      "citation": "Flufenamic-acid melt-quenched study 2022",
+      "doi": "10.1021/acs.molpharmaceut.2c00016",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9097533/",
+      "locator_scope": "Experimental DSC/XRD; sequential-heating results and figures",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_barbital",
+      "citation": "Barbital polymorph study 2014",
+      "doi": "10.1021/mp400515f",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4066893/",
+      "locator_scope": "Experimental thermal analysis; transformation figure; melting table",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_glycine",
+      "citation": "Glycine DSC study 2024",
+      "doi": "10.3390/molecules29225366",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11596786/",
+      "locator_scope": "Experimental HF-DSC; form-assignment results and event table/figure",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_piracetam",
+      "citation": "Piracetam polymorph study 2022",
+      "doi": "10.1021/acs.cgd.1c01421",
+      "url": "https://doi.org/10.1021/acs.cgd.1c01421",
+      "locator_scope": "Experimental DSC; polymorph heating curves and Results",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_theophylline",
+      "citation": "Theophylline thermal-analysis study 2013",
+      "doi": "10.1155/2013/258435",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4595972/",
+      "locator_scope": "DSC methods; Results and thermogram for anhydrous Form II",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_celecoxib",
+      "citation": "Celecoxib thermal-analysis study 2019",
+      "doi": "10.1021/acs.analchem.9b01378",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6750642/",
+      "locator_scope": "Sample preparation and DSC methods; thermal-event table/figure",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_tolbutamide",
+      "citation": "Tolbutamide polymorph study 2016",
+      "doi": "10.1016/j.xphs.2016.03.021",
+      "url": "https://doi.org/10.1016/j.xphs.2016.03.021",
+      "locator_scope": "Experimental MDSC; polymorph-transition Results and figures",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_loratadine",
+      "citation": "Loratadine polymorph study 2016",
+      "doi": "10.1039/C6RA14021A",
+      "url": "https://doi.org/10.1039/C6RA14021A",
+      "locator_scope": "Experimental DSC; Figure 10 and accompanying Results",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_flurbiprofen",
+      "citation": "Flurbiprofen polymorph study 2008",
+      "doi": "10.1002/jps.20954",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2581769/",
+      "locator_scope": "Experimental DSC; polymorph thermograms and table",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_ditbuc6",
+      "citation": "ditBuC6-BTBT polymorph study 2025",
+      "doi": "10.1021/acs.cgd.5c00046",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12186265/",
+      "locator_scope": "Experimental DSC; polymorph figure and Results",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_nifedipine",
+      "citation": "Ishida, Wu, and Yu 2007",
+      "doi": "10.1002/jps.20925",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jps.20925",
+      "locator_scope": "Materials/Methods and Figure 2 with accompanying Results",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_nimesulide",
+      "citation": "Nimesulide pressure–temperature study 2017",
+      "doi": "10.1016/j.ijpharm.2017.04.016",
+      "url": "https://upcommons.upc.edu/bitstream/handle/2117/104659/pressure-temperature.pdf",
+      "locator_scope": "Experimental DSC; phase-diagram Results and DSC figures",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_fenofibrate",
+      "citation": "Fenofibrate glass study 2014",
+      "doi": "10.1016/j.jpha.2014.09.003",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5762493/",
+      "locator_scope": "Experimental DSC; Results and thermogram",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_felodipine",
+      "citation": "Felodipine amorphous study 2024",
+      "doi": "10.1208/s12249-024-02919-2",
+      "url": "https://doi.org/10.1208/s12249-024-02919-2",
+      "locator_scope": "Amorphous preparation; DSC methods; thermal-analysis Results",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_sulindac",
+      "citation": "Sulindac polymorph study 2008",
+      "doi": "10.1002/jps.20954",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2581769/",
+      "locator_scope": "Experimental DSC; sulindac thermograms and table",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_anthranilic",
+      "citation": "Horiuchi et al. 2015",
+      "doi": "10.1021/acs.chemmater.5b02957",
+      "url": "https://pstorage-acs-6854636.s3.amazonaws.com/3762931/cm5b02957_si_001.pdf",
+      "locator_scope": "SI p. 2 Thermal analysis; Figure S2 p. 3",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_mefenamic",
+      "citation": "Sid et al. 2021",
+      "doi": "10.1080/14756366.2020.1869225",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8759728/",
+      "locator_scope": "Methods Differential scanning calorimetry; Results and Figure 6",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_sulfamerazine",
+      "citation": "Wood et al. 2026",
+      "doi": "10.1021/acs.cgd.5c01406",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12784330/",
+      "locator_scope": "§§2.1.2 and 2.6.1; Figures 10 and 12; SI §1.6/Table 1.6.1",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_pyrazinamide",
+      "citation": "Li et al. 2020",
+      "doi": "10.1016/j.ijpharm.2020.119230",
+      "url": "https://upcommons.upc.edu/bitstream/handle/2117/340839/Preprint-PZA-2020.pdf?sequence=1",
+      "locator_scope": "§§2.1, 2.5, 3.1.1–3.1.2; Figure 2 and Table 3",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_dapsone",
+      "citation": "Braun et al. 2017",
+      "doi": "10.1021/acs.cgd.7b01089",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6191030/",
+      "locator_scope": "Thermal-analysis Results; Figure 3 and caption",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_chlorpropamide",
+      "citation": "Sarraguça et al. 2022",
+      "doi": "10.3390/ph15030279",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8951776/",
+      "locator_scope": "§§2.1 and 4.4; Figure 2a",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_phenobarbital",
+      "citation": "Roy, Goud, and Matzger 2016",
+      "doi": "10.1039/C6CC00959J",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4964875/",
+      "locator_scope": "Main thermal-behavior paragraph; ESI SI 8 pp. S8–S9, Figure S7",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_ps",
+      "citation": "De Focatiis et al. 2010",
+      "doi": "10.1002/polb.22028",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/polb.22028",
+      "locator_scope": "Experimental—Materials and DSC; Table 1",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_pmma",
+      "citation": "Chang and Woo 2010",
+      "doi": "10.1039/B9PY00237E",
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2010/py/b9py00237e",
+      "locator_scope": "Experimental—Materials/preparation and Apparatus/procedures; Figures 1–2",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_pet",
+      "citation": "Gomes et al. 2025",
+      "doi": "10.3390/ma18184394",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12471776/",
+      "locator_scope": "Methods §§2.1.1, 2.3; Results §3.1, Table 2 and Figure 1",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_plla",
+      "citation": "Athanasoulia and Tarantili 2017",
+      "doi": "10.1515/pac-2016-0919",
+      "url": "https://www.degruyter.com/document/doi/10.1515/pac-2016-0919/html",
+      "locator_scope": "Experimental materials/preparation/DSC; Figure 4 and Table 1",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_ipp",
+      "citation": "Krajenta and Pawlak 2024",
+      "doi": "10.3390/polym16121710",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207872/",
+      "locator_scope": "Methods §2 and Table 1; Results §3.1, Figure 1, Tables 2–3",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_pvdf",
+      "citation": "Ma, Yuan, and Wang 2014",
+      "doi": "10.3390/membranes4020243",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4085623/",
+      "locator_scope": "Experimental §§3.1, 3.3; Results §2.1 Table 1 and Figures 3–4",
+      "source_type": "primary_experimental"
+    },
+    {
+      "source_id": "src_cocoa",
+      "citation": "Loisel et al. 1998",
+      "doi": "10.1007/s11746-998-0245-y",
+      "url": "https://lib3.dss.go.th/fulltext/Journal/J.AOCS/J.AOCS/1998/no.4/1998%2Cvol75%2Cno4%2Cp425-439.pdf",
+      "locator_scope": "Materials and Methods pp. 427–428; Figures 4–6 and text pp. 430–433; Discussion pp. 435–439",
+      "source_type": "primary_experimental"
+    }
+  ],
+  "protocols": [
+    {
+      "protocol_id": "protocol_mol_paracetamol",
+      "instrument": "Raman-detected DSC",
+      "sample_mass": "10–12 mg",
+      "pan": "quartz crucible with thin cover glass",
+      "atmosphere": "not reported",
+      "thermal_history": "Form I heated to 190 °C for 60 s, rapidly cooled to room temperature, then reheated",
+      "heating_rate_C_min": 2,
+      "cooling_rate_C_min": null,
+      "scan_context": "post-quench heating",
+      "temperature_field_rule": "source onset or observed interval"
+    },
+    {
+      "protocol_id": "protocol_mol_carbamazepine",
+      "instrument": "coupled DSC–XRD",
+      "sample_mass": "approximately 12.1 mg for Form II run",
+      "pan": "open pan for DSC–XRD",
+      "atmosphere": "not reported",
+      "thermal_history": "procured form-specific samples heated in situ",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating",
+      "temperature_field_rule": "source onset/interval"
+    },
+    {
+      "protocol_id": "protocol_mol_indomethacin",
+      "instrument": "DSC",
+      "sample_mass": "2–5 mg",
+      "pan": "40 µL aluminum crucible, pierced lid",
+      "atmosphere": "nitrogen 50 mL/min",
+      "thermal_history": "gamma crystal melted at 165 °C, held 30 s, quenched on aluminum heat sink, stored over P2O5 for 1 h, ground",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating after 3 min at 25 °C; triplicate",
+      "temperature_field_rule": "midpoint for Tg; onset for crystallization/melting"
+    },
+    {
+      "protocol_id": "protocol_mol_sulfathiazole",
+      "instrument": "TA Q1000 heat-flux DSC with terahertz phase assignment",
+      "sample_mass": "1–2 mg",
+      "pan": "sealed aluminum",
+      "atmosphere": "helium purge",
+      "thermal_history": "separately prepared Forms I–V; equilibrated at 293 K, then heated to 483 K",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating",
+      "temperature_field_rule": "Table 2 melting-point onset at 10 K/min"
+    },
+    {
+      "protocol_id": "protocol_mol_caffeine",
+      "instrument": "DSC",
+      "sample_mass": "not reported",
+      "pan": "not reported",
+      "atmosphere": "not reported",
+      "thermal_history": "anhydrous Form II heated",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating",
+      "temperature_field_rule": "onset for II→I; peak for melt"
+    },
+    {
+      "protocol_id": "protocol_mol_tolfenamic_acid",
+      "instrument": "DSC",
+      "sample_mass": "not reported",
+      "pan": "not reported",
+      "atmosphere": "not reported",
+      "thermal_history": "separately prepared Forms I, II and IX",
+      "heating_rate_C_min": null,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating",
+      "temperature_field_rule": "onset"
+    },
+    {
+      "protocol_id": "protocol_mol_griseofulvin",
+      "instrument": "Netzsch Polyma 214 / TA Q2000",
+      "sample_mass": "2–4 mg for Form VI; source protocol for glass",
+      "pan": "Concavus aluminum, crimped then pierced / hermetic",
+      "atmosphere": "nitrogen 20 mL/min / nitrogen 50 mL/min",
+      "thermal_history": "desolvated Form VI heating; separate melt-quench heat/cool/reheat glass protocol",
+      "heating_rate_C_min": 5,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating; glass reheat at 10 °C/min",
+      "temperature_field_rule": "peak for crystal study; source table convention for glass study"
+    },
+    {
+      "protocol_id": "protocol_mol_benzocaine",
+      "instrument": "TA Q100 and PerkinElmer Pyris Diamond",
+      "sample_mass": "about 10 mg",
+      "pan": "sealed aluminum",
+      "atmosphere": "not reported",
+      "thermal_history": "vacuum-dried, PXRD-verified Form I; separate instruments/rates",
+      "heating_rate_C_min": 2,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating",
+      "temperature_field_rule": "observed interval for transition; individual/pooled melting values"
+    },
+    {
+      "protocol_id": "protocol_mol_flufenamic_acid",
+      "instrument": "modified TA Q20 with temperature-resolved XRD",
+      "sample_mass": "not reported",
+      "pan": "not reported",
+      "atmosphere": "not reported",
+      "thermal_history": "pure Form I melted/quenched; reheated from 0 to 160 °C",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "reheating",
+      "temperature_field_rule": "source event temperature"
+    },
+    {
+      "protocol_id": "protocol_mol_barbital",
+      "instrument": "PerkinElmer DSC7/Pyris 2",
+      "sample_mass": "1–3 mg",
+      "pan": "sealed 25 µL aluminum",
+      "atmosphere": "dry nitrogen 20 mL/min",
+      "thermal_history": "separately prepared polymorphs",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "representative heating; n=4–20",
+      "temperature_field_rule": "range for transformation; onset for melt"
+    },
+    {
+      "protocol_id": "protocol_mol_glycine",
+      "instrument": "TA Q1000 heat-flux DSC",
+      "sample_mass": "6.37 mg small pieces for scored run",
+      "pan": "not reported",
+      "atmosphere": "not reported",
+      "thermal_history": "PXRD-confirmed gamma glycine",
+      "heating_rate_C_min": 5,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating from 183 K to decomposition",
+      "temperature_field_rule": "source onset"
+    },
+    {
+      "protocol_id": "protocol_mol_piracetam",
+      "instrument": "Netzsch Polyma 214",
+      "sample_mass": "not reported",
+      "pan": "Concavus aluminum, pierced",
+      "atmosphere": "not reported",
+      "thermal_history": "separately prepared Forms II, III and VI",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "293–443 K heating",
+      "temperature_field_rule": "onset range/approximate onset"
+    },
+    {
+      "protocol_id": "protocol_mol_theophylline",
+      "instrument": "TA Q200",
+      "sample_mass": "4–5 mg",
+      "pan": "crimped aluminum with pinhole",
+      "atmosphere": "dry nitrogen",
+      "thermal_history": "commercial anhydrous Form II verified by PXRD",
+      "heating_rate_C_min": 5,
+      "cooling_rate_C_min": null,
+      "scan_context": "room temperature to 300 °C",
+      "temperature_field_rule": "peak"
+    },
+    {
+      "protocol_id": "protocol_mol_celecoxib",
+      "instrument": "Mettler Toledo DSC 823e",
+      "sample_mass": "5–10 mg",
+      "pan": "40 µL aluminum, pierced lid",
+      "atmosphere": "nitrogen 50 mL/min",
+      "thermal_history": "crystal melted just above Tm, liquid-nitrogen quenched, stored over P2O5",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "25 °C hold 3 min then heat; triplicate",
+      "temperature_field_rule": "midpoint Tg; onset crystallization/melt"
+    },
+    {
+      "protocol_id": "protocol_mol_tolbutamide",
+      "instrument": "TA MDSC 2920",
+      "sample_mass": "3–8 mg",
+      "pan": "hermetic aluminum",
+      "atmosphere": "nitrogen 50 mL/min",
+      "thermal_history": "form-specific samples and cooling/reheating branches",
+      "heating_rate_C_min": 5,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating/cooling; four runs",
+      "temperature_field_rule": "onset or source transformation temperature"
+    },
+    {
+      "protocol_id": "protocol_mol_loratadine",
+      "instrument": "DSC, instrument not reported",
+      "sample_mass": "about 5 mg",
+      "pan": "standard sealed aluminum",
+      "atmosphere": "nitrogen, flow not reported",
+      "thermal_history": "form-specific and melt-quenched samples",
+      "heating_rate_C_min": 0.5,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating 25–160 °C",
+      "temperature_field_rule": "peak/onset as reported"
+    },
+    {
+      "protocol_id": "protocol_mol_flurbiprofen",
+      "instrument": "TA Q10",
+      "sample_mass": "not reported",
+      "pan": "sealed aluminum",
+      "atmosphere": "nitrogen, flow not reported",
+      "thermal_history": "separately prepared Forms I–III",
+      "heating_rate_C_min": 5,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating 30–130 °C",
+      "temperature_field_rule": "onset"
+    },
+    {
+      "protocol_id": "protocol_mol_ditbuc6_btbt",
+      "instrument": "Mettler DSC1",
+      "sample_mass": "2–4 mg",
+      "pan": "hermetic 40 µL aluminum",
+      "atmosphere": "dry nitrogen 80 mL/min",
+      "thermal_history": "Form II heated",
+      "heating_rate_C_min": 5,
+      "cooling_rate_C_min": null,
+      "scan_context": "room temperature to 200 °C",
+      "temperature_field_rule": "peak for transition; approximate onset for melt"
+    },
+    {
+      "protocol_id": "protocol_mol_nifedipine",
+      "instrument": "TA Q1000",
+      "sample_mass": "4.5–5.5 mg film precursor",
+      "pan": "crimped aluminum",
+      "atmosphere": "nitrogen 50 mL/min",
+      "thermal_history": "alpha melted at 180–185 °C about 5 min between cover slips, cooled on aluminum block, light protected",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating amorphous film",
+      "temperature_field_rule": "source temperature; field not reported"
+    },
+    {
+      "protocol_id": "protocol_mol_nimesulide",
+      "instrument": "TA Q100",
+      "sample_mass": "10–20 mg",
+      "pan": "sealed aluminum",
+      "atmosphere": "not reported",
+      "thermal_history": "PXRD Form I; Form II by acetonitrile evaporation; vitrified branch",
+      "heating_rate_C_min": null,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating at 1–10 K/min",
+      "temperature_field_rule": "onset for fusion; field not reported for Tg"
+    },
+    {
+      "protocol_id": "protocol_mol_fenofibrate",
+      "instrument": "Mettler DSC 821e",
+      "sample_mass": "3.154 mg",
+      "pan": "sealed aluminum with pinhole",
+      "atmosphere": "dry nitrogen 50 mL/min",
+      "thermal_history": "heat to 91 °C, hold 3 min, cool to −50 °C, hold 5 min, reheat",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": 10,
+      "scan_context": "heat/cool/reheat",
+      "temperature_field_rule": "onset"
+    },
+    {
+      "protocol_id": "protocol_mol_felodipine",
+      "instrument": "PerkinElmer DSC 8000",
+      "sample_mass": "not reported",
+      "pan": "hermetic pan",
+      "atmosphere": "not reported",
+      "thermal_history": "0.3 g melted at 427 K for 15 min, liquid-nitrogen-vapor cooled, warmed to room temperature",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "176–453 K heating",
+      "temperature_field_rule": "peak for melt; half-width for Tg"
+    },
+    {
+      "protocol_id": "protocol_mol_sulindac",
+      "instrument": "TA Q10",
+      "sample_mass": "not reported",
+      "pan": "sealed aluminum",
+      "atmosphere": "nitrogen, flow not reported",
+      "thermal_history": "separately prepared Forms I, II and IV",
+      "heating_rate_C_min": 5,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating 40–220 °C",
+      "temperature_field_rule": "onset/approximate region"
+    },
+    {
+      "protocol_id": "protocol_mol_anthranilic_acid",
+      "instrument": "Hitachi DSC7000X",
+      "sample_mass": "2.44 mg at 4 K/min; 2.23 mg at 8 K/min",
+      "pan": "encapsulated aluminum",
+      "atmosphere": "not reported",
+      "thermal_history": "Form I powder",
+      "heating_rate_C_min": 4,
+      "cooling_rate_C_min": null,
+      "scan_context": "heating; independent 8 K/min run also retained",
+      "temperature_field_rule": "peak"
+    },
+    {
+      "protocol_id": "protocol_mol_mefenamic_acid",
+      "instrument": "SETARAM DSC",
+      "sample_mass": "10–15 mg",
+      "pan": "sealed aluminum",
+      "atmosphere": "nitrogen 20 mL/min",
+      "thermal_history": "FTIR/XRPD-confirmed Form I",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "25–340 °C heating",
+      "temperature_field_rule": "peak"
+    },
+    {
+      "protocol_id": "protocol_mol_sulfamerazine",
+      "instrument": "laboratory-specific DSC instruments",
+      "sample_mass": "source-condition dependent",
+      "pan": "SI Table 1.6.1",
+      "atmosphere": "SI Table 1.6.1",
+      "thermal_history": "Form II prepared by slurry/seed protocol and PXRD confirmed",
+      "heating_rate_C_min": null,
+      "cooling_rate_C_min": null,
+      "scan_context": "five replicates per plotted condition except UCT4",
+      "temperature_field_rule": "onset range"
+    },
+    {
+      "protocol_id": "protocol_mol_pyrazinamide",
+      "instrument": "TA Q100 and Netzsch DSC214",
+      "sample_mass": "5.88 mg representative run",
+      "pan": "45 µL sealed pan; material not reported",
+      "atmosphere": "nitrogen",
+      "thermal_history": "commercial alpha PXRD-confirmed; gamma prepared and verified",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "representative heating",
+      "temperature_field_rule": "approximate curve event; melting mean from 27 runs"
+    },
+    {
+      "protocol_id": "protocol_mol_dapsone",
+      "instrument": "DSC",
+      "sample_mass": "not reported",
+      "pan": "not reported",
+      "atmosphere": "not reported",
+      "thermal_history": "form III heating followed by cooling/reheating",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": 10,
+      "scan_context": "cyclic heating/cooling",
+      "temperature_field_rule": "onset for heating transition and melt; cooling field not reported"
+    },
+    {
+      "protocol_id": "protocol_mol_chlorpropamide",
+      "instrument": "Netzsch DSC200F3 Maia",
+      "sample_mass": "7–10 mg",
+      "pan": "sealed aluminum",
+      "atmosphere": "not reported",
+      "thermal_history": "two heat/cool cycles; commercial starting form not reported",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": null,
+      "scan_context": "first heat, cooling, second heat; at least duplicate",
+      "temperature_field_rule": "onset"
+    },
+    {
+      "protocol_id": "protocol_mol_phenobarbital",
+      "instrument": "TA Q10",
+      "sample_mass": "not reported",
+      "pan": "sealed aluminum",
+      "atmosphere": "nitrogen purge",
+      "thermal_history": "PXRD/Raman-characterized Form I",
+      "heating_rate_C_min": 5,
+      "cooling_rate_C_min": 5,
+      "scan_context": "35–200 °C heating/cooling",
+      "temperature_field_rule": "onset"
+    },
+    {
+      "protocol_id": "protocol_poly_atactic_ps",
+      "instrument": "TA DSC Q10",
+      "sample_mass": "not reported",
+      "pan": "not reported",
+      "atmosphere": "not reported",
+      "thermal_history": "heat to 160 °C, cool to 60 °C, reheat to 160 °C; sequence repeated three times",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": 10,
+      "scan_context": "first and second heatings present; contributing ramp not separately stated",
+      "temperature_field_rule": "onset–end intercept"
+    },
+    {
+      "protocol_id": "protocol_poly_atactic_pmma",
+      "instrument": "PerkinElmer DSC-7",
+      "sample_mass": "not reported",
+      "pan": "not reported",
+      "atmosphere": "continuous nitrogen flow",
+      "thermal_history": "neat-sample thermal history not reported",
+      "heating_rate_C_min": 20,
+      "cooling_rate_C_min": null,
+      "scan_context": "not reported",
+      "temperature_field_rule": "onset"
+    },
+    {
+      "protocol_id": "protocol_poly_pet",
+      "instrument": "Mettler Toledo DSC 3+",
+      "sample_mass": "8–10 mg",
+      "pan": "not reported",
+      "atmosphere": "constant nitrogen flow",
+      "thermal_history": "dry 100 °C 12 h then 150 °C 4 h; heat/cool/heat 25–300 °C",
+      "heating_rate_C_min": 20,
+      "cooling_rate_C_min": 20,
+      "scan_context": "second heating; intervening cooling",
+      "temperature_field_rule": "as tabulated; algorithm not specified"
+    },
+    {
+      "protocol_id": "protocol_poly_plla",
+      "instrument": "Mettler Toledo DSC 1",
+      "sample_mass": "8–10 mg",
+      "pan": "not reported",
+      "atmosphere": "nitrogen flow",
+      "thermal_history": "vacuum dry 80 °C 4 h; extrude; heat −40→190, hold 3 min, cool, hold, reheat",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": 10,
+      "scan_context": "second heating",
+      "temperature_field_rule": "as tabulated; algorithm not specified"
+    },
+    {
+      "protocol_id": "protocol_poly_ipp",
+      "instrument": "TA DSC Q20",
+      "sample_mass": "7–9 mg",
+      "pan": "not reported",
+      "atmosphere": "not reported",
+      "thermal_history": "mix at 185 °C 2 min; heat 0→190, hold 1 min, cool 0, reheat",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": 10,
+      "scan_context": "cooling and second heating",
+      "temperature_field_rule": "peak"
+    },
+    {
+      "protocol_id": "protocol_poly_pvdf",
+      "instrument": "TA Q200",
+      "sample_mass": "not reported",
+      "pan": "sealed aluminum",
+      "atmosphere": "dry nitrogen",
+      "thermal_history": "rapid heat to 200 °C, cool to 40 °C at 2.5, hold 2 min, reheat",
+      "heating_rate_C_min": 10,
+      "cooling_rate_C_min": 2.5,
+      "scan_context": "post-erasure cooling and subsequent heating",
+      "temperature_field_rule": "onset/peak/final as stated"
+    },
+    {
+      "protocol_id": "protocol_complex_cocoa_butter",
+      "instrument": "PerkinElmer DSC-7",
+      "sample_mass": "not reported",
+      "pan": "40 µL aluminum B014-3024 with cover B014-3004",
+      "atmosphere": "not reported",
+      "thermal_history": "melt at 80 °C; low-rate experiment text states quenching at −30 °C before heating from −10 to 38 °C, while the Figure 6 caption describes the coupled samples as quenched from 80 to −10 °C",
+      "heating_rate_C_min": 0.1,
+      "cooling_rate_C_min": null,
+      "scan_context": "−10 to 38 °C heating with coupled temperature-resolved XRD",
+      "temperature_field_rule": "range/bound"
+    }
+  ],
+  "anchors": [
+    {
+      "anchor_id": "mol_paracetamol__sc_to_iii",
+      "scoring_unit_id": "mol_paracetamol__sc_to_iii",
+      "material_id": "mol_paracetamol",
+      "starting_form_state": "melt-quenched supercooled state",
+      "product_form_state": "Form III",
+      "event_identity": "melt-quenched supercooled state → Form III",
+      "event_type": "cold_crystallization",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "observed_interval",
+        "value_C": null,
+        "lower_C": 62,
+        "upper_C": 72,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_paracetamol",
+      "citation": {
+        "source_id": "src_paracetamol",
+        "doi": "10.1016/j.jpba.2008.09.008",
+        "url": "https://doi.org/10.1016/j.jpba.2008.09.008",
+        "locator": "Figure 2 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_paracetamol__iii_to_ii",
+      "scoring_unit_id": "mol_paracetamol__iii_to_ii",
+      "material_id": "mol_paracetamol",
+      "starting_form_state": "Form III",
+      "product_form_state": "Form II",
+      "event_identity": "Form III → Form II",
+      "event_type": "solid_solid_transition",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "observed_interval",
+        "value_C": null,
+        "lower_C": 109,
+        "upper_C": 120,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_paracetamol",
+      "citation": {
+        "source_id": "src_paracetamol",
+        "doi": "10.1016/j.jpba.2008.09.008",
+        "url": "https://doi.org/10.1016/j.jpba.2008.09.008",
+        "locator": "Figure 3 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_paracetamol__ii_melt",
+      "scoring_unit_id": "mol_paracetamol__ii_melt",
+      "material_id": "mol_paracetamol",
+      "starting_form_state": "Form II",
+      "product_form_state": "liquid",
+      "event_identity": "Form II → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 155,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_paracetamol",
+      "citation": {
+        "source_id": "src_paracetamol",
+        "doi": "10.1016/j.jpba.2008.09.008",
+        "url": "https://doi.org/10.1016/j.jpba.2008.09.008",
+        "locator": "Figure 3 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_carbamazepine__ii_to_i",
+      "scoring_unit_id": "mol_carbamazepine__ii_to_i",
+      "material_id": "mol_carbamazepine",
+      "starting_form_state": "Form II",
+      "product_form_state": "Form I",
+      "event_identity": "Form II → Form I",
+      "event_type": "melt_mediated_conversion",
+      "direction": "mixed_exothermic_endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 119,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_carbamazepine",
+      "citation": {
+        "source_id": "src_carbamazepine",
+        "doi": "10.1002/chem.201802368",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6175174/",
+        "locator": "Figure 9 and CBZ II Results"
+      },
+      "evidence_note": "Initial sample contained minor Form III; source identifies localized melting in the conversion.",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_carbamazepine__iii_to_i",
+      "scoring_unit_id": "mol_carbamazepine__iii_to_i",
+      "material_id": "mol_carbamazepine",
+      "starting_form_state": "Form III",
+      "product_form_state": "Form I",
+      "event_identity": "Form III → Form I",
+      "event_type": "melt_sublimation_recrystallization",
+      "direction": "endothermic_then_exothermic",
+      "temperature": {
+        "kind": "observed_interval",
+        "value_C": null,
+        "lower_C": 165,
+        "upper_C": 175,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_carbamazepine",
+      "citation": {
+        "source_id": "src_carbamazepine",
+        "doi": "10.1002/chem.201802368",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6175174/",
+        "locator": "Form III discussion after Figure 11"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_carbamazepine__iv_to_i",
+      "scoring_unit_id": "mol_carbamazepine__iv_to_i",
+      "material_id": "mol_carbamazepine",
+      "starting_form_state": "Form IV",
+      "product_form_state": "Form I",
+      "event_identity": "Form IV → Form I",
+      "event_type": "melt_mediated_conversion",
+      "direction": "endothermic_then_exothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 182,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_carbamazepine",
+      "citation": {
+        "source_id": "src_carbamazepine",
+        "doi": "10.1002/chem.201802368",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6175174/",
+        "locator": "Form IV Results and Figure 6"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_carbamazepine__i_melt",
+      "scoring_unit_id": "mol_carbamazepine__common_i_melt",
+      "material_id": "mol_carbamazepine",
+      "starting_form_state": "Form I or converted precursor",
+      "product_form_state": "liquid",
+      "event_identity": "Form I or converted precursor → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 191,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_carbamazepine",
+      "citation": {
+        "source_id": "src_carbamazepine",
+        "doi": "10.1002/chem.201802368",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6175174/",
+        "locator": "Figure 6b and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_indomethacin__tg",
+      "scoring_unit_id": "mol_indomethacin__tg",
+      "material_id": "mol_indomethacin",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "supercooled liquid",
+      "event_identity": "melt-quenched amorphous state → supercooled liquid",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "midpoint",
+        "value_C": 44.2,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_indomethacin",
+      "citation": {
+        "source_id": "src_indomethacin",
+        "doi": "10.5599/admet.839",
+        "url": "https://doi.org/10.5599/admet.839",
+        "locator": "Figure 2 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_indomethacin__cold_cryst",
+      "scoring_unit_id": "mol_indomethacin__cold_cryst",
+      "material_id": "mol_indomethacin",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "alpha form",
+      "event_identity": "melt-quenched amorphous state → alpha form",
+      "event_type": "cold_crystallization",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 99.5,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.2,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_indomethacin",
+      "citation": {
+        "source_id": "src_indomethacin",
+        "doi": "10.5599/admet.839",
+        "url": "https://doi.org/10.5599/admet.839",
+        "locator": "Figure 2 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_indomethacin__alpha_melt",
+      "scoring_unit_id": "mol_indomethacin__alpha_melt",
+      "material_id": "mol_indomethacin",
+      "starting_form_state": "alpha form",
+      "product_form_state": "liquid",
+      "event_identity": "alpha form → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 153.2,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_indomethacin",
+      "citation": {
+        "source_id": "src_indomethacin",
+        "doi": "10.5599/admet.839",
+        "url": "https://doi.org/10.5599/admet.839",
+        "locator": "Figure 2 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_indomethacin__gamma_melt",
+      "scoring_unit_id": "mol_indomethacin__gamma_melt",
+      "material_id": "mol_indomethacin",
+      "starting_form_state": "gamma form",
+      "product_form_state": "liquid",
+      "event_identity": "gamma form → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 159.8,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_indomethacin",
+      "citation": {
+        "source_id": "src_indomethacin",
+        "doi": "10.5599/admet.839",
+        "url": "https://doi.org/10.5599/admet.839",
+        "locator": "Figure 2 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_sulfathiazole__ii_path",
+      "scoring_unit_id": "mol_sulfathiazole__ii_path",
+      "material_id": "mol_sulfathiazole",
+      "starting_form_state": "Form II",
+      "product_form_state": "Form I via melt/recrystallization",
+      "event_identity": "Form II → Form I via melt/recrystallization",
+      "event_type": "melt_mediated_conversion",
+      "direction": "endothermic_then_exothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 196.45,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_sulfathiazole",
+      "citation": {
+        "source_id": "src_sulfathiazole",
+        "doi": "10.1002/jps.20719",
+        "url": "https://orbit.dtu.dk/files/5618204/jpharmsci_sulfathiazole_final_ramancorr.pdf",
+        "locator": "Results §3.2 and Table 2, 10 K/min Form-II row"
+      },
+      "evidence_note": "The source reports that a completely pure Form-II specimen could not be maintained during transport; the scored melt is Form II, while contaminant conversion is not scored.",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_sulfathiazole__iii_to_i",
+      "scoring_unit_id": "mol_sulfathiazole__iii_to_i",
+      "material_id": "mol_sulfathiazole",
+      "starting_form_state": "Form III",
+      "product_form_state": "Form I",
+      "event_identity": "Form III → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "protocol_dependent",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 159.25,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": "10 K/min"
+      },
+      "protocol_id": "protocol_mol_sulfathiazole",
+      "citation": {
+        "source_id": "src_sulfathiazole",
+        "doi": "10.1002/jps.20719",
+        "url": "https://orbit.dtu.dk/files/5618204/jpharmsci_sulfathiazole_final_ramancorr.pdf",
+        "locator": "Table 2, 10 K/min Form-III row; Figure 4B"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_sulfathiazole__iv_to_i",
+      "scoring_unit_id": "mol_sulfathiazole__iv_to_i",
+      "material_id": "mol_sulfathiazole",
+      "starting_form_state": "Form IV",
+      "product_form_state": "Form I",
+      "event_identity": "Form IV → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "protocol_dependent",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 137.85,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": "10 K/min"
+      },
+      "protocol_id": "protocol_mol_sulfathiazole",
+      "citation": {
+        "source_id": "src_sulfathiazole",
+        "doi": "10.1002/jps.20719",
+        "url": "https://orbit.dtu.dk/files/5618204/jpharmsci_sulfathiazole_final_ramancorr.pdf",
+        "locator": "Table 2, 10 K/min Form-IV row; Figures 4B and 6B"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_sulfathiazole__v_to_i",
+      "scoring_unit_id": "mol_sulfathiazole__v_to_i",
+      "material_id": "mol_sulfathiazole",
+      "starting_form_state": "Form V",
+      "product_form_state": "Form I",
+      "event_identity": "Form V → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "protocol_dependent",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 159.35,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": "10 K/min"
+      },
+      "protocol_id": "protocol_mol_sulfathiazole",
+      "citation": {
+        "source_id": "src_sulfathiazole",
+        "doi": "10.1002/jps.20719",
+        "url": "https://orbit.dtu.dk/files/5618204/jpharmsci_sulfathiazole_final_ramancorr.pdf",
+        "locator": "Table 2, 10 K/min Form-V row; Figure 4B"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_sulfathiazole__i_melt",
+      "scoring_unit_id": "mol_sulfathiazole__common_i_melt",
+      "material_id": "mol_sulfathiazole",
+      "starting_form_state": "Form I or converted precursor",
+      "product_form_state": "liquid",
+      "event_identity": "Form I or converted precursor → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 201.55,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_sulfathiazole",
+      "citation": {
+        "source_id": "src_sulfathiazole",
+        "doi": "10.1002/jps.20719",
+        "url": "https://orbit.dtu.dk/files/5618204/jpharmsci_sulfathiazole_final_ramancorr.pdf",
+        "locator": "Table 2, 10 K/min Form-I row; Figure 4B"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_caffeine__ii_to_i",
+      "scoring_unit_id": "mol_caffeine__ii_to_i",
+      "material_id": "mol_caffeine",
+      "starting_form_state": "Form II",
+      "product_form_state": "Form I",
+      "event_identity": "Form II → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 143,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_caffeine",
+      "citation": {
+        "source_id": "src_caffeine",
+        "doi": "10.1016/S0040-6031(98)00363-3",
+        "url": "https://doi.org/10.1016/S0040-6031(98)00363-3",
+        "locator": "DSC Results and transition figure"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_tolfenamic_acid__ii_to_i",
+      "scoring_unit_id": "mol_tolfenamic_acid__ii_to_i",
+      "material_id": "mol_tolfenamic_acid",
+      "starting_form_state": "Form II",
+      "product_form_state": "Form I",
+      "event_identity": "Form II → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 144.15,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.4,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_tolfenamic_acid",
+      "citation": {
+        "source_id": "src_tolfenamic",
+        "doi": "10.1039/D1CE00343G",
+        "url": "https://doi.org/10.1039/D1CE00343G",
+        "locator": "Table 2, §3.4 and Figure 6"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_tolfenamic_acid__ix_to_i",
+      "scoring_unit_id": "mol_tolfenamic_acid__ix_to_i",
+      "material_id": "mol_tolfenamic_acid",
+      "starting_form_state": "Form IX",
+      "product_form_state": "Form I",
+      "event_identity": "Form IX → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 134.65,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.4,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_tolfenamic_acid",
+      "citation": {
+        "source_id": "src_tolfenamic",
+        "doi": "10.1039/D1CE00343G",
+        "url": "https://doi.org/10.1039/D1CE00343G",
+        "locator": "Table 2, §3.4 and Figure 6"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_tolfenamic_acid__i_melt",
+      "scoring_unit_id": "mol_tolfenamic_acid__common_i_melt",
+      "material_id": "mol_tolfenamic_acid",
+      "starting_form_state": "Form I or converted precursor",
+      "product_form_state": "liquid",
+      "event_identity": "Form I or converted precursor → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 211.75,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_tolfenamic_acid",
+      "citation": {
+        "source_id": "src_tolfenamic",
+        "doi": "10.1039/D1CE00343G",
+        "url": "https://doi.org/10.1039/D1CE00343G",
+        "locator": "Table 2, §3.4"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_griseofulvin__vi_to_i",
+      "scoring_unit_id": "mol_griseofulvin__vi_to_i",
+      "material_id": "mol_griseofulvin",
+      "starting_form_state": "desolvated Form VI",
+      "product_form_state": "Form I",
+      "event_identity": "desolvated Form VI → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 108.4,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_griseofulvin",
+      "citation": {
+        "source_id": "src_griseo_crystal",
+        "doi": "10.1021/acs.cgd.3c01011",
+        "url": "https://doi.org/10.1021/acs.cgd.3c01011",
+        "locator": "Form-VI DSC figure and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_griseofulvin__tg",
+      "scoring_unit_id": "mol_griseofulvin__tg",
+      "material_id": "mol_griseofulvin",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "supercooled liquid",
+      "event_identity": "melt-quenched amorphous state → supercooled liquid",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "midpoint",
+        "value_C": 89,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 1.2,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_griseofulvin",
+      "citation": {
+        "source_id": "src_griseo_glass",
+        "doi": "10.1002/jps.22197",
+        "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/jps.22197",
+        "locator": "Table 1 and related Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_griseofulvin__cold_cryst",
+      "scoring_unit_id": "mol_griseofulvin__cold_cryst",
+      "material_id": "mol_griseofulvin",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "Form I",
+      "event_identity": "melt-quenched amorphous state → Form I",
+      "event_type": "cold_crystallization",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 123.3,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.4,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_griseofulvin",
+      "citation": {
+        "source_id": "src_griseo_glass",
+        "doi": "10.1002/jps.22197",
+        "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/jps.22197",
+        "locator": "Table 2/3 and related Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_griseofulvin__i_melt",
+      "scoring_unit_id": "mol_griseofulvin__i_melt",
+      "material_id": "mol_griseofulvin",
+      "starting_form_state": "Form I",
+      "product_form_state": "liquid",
+      "event_identity": "Form I → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 217.6,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.3,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_griseofulvin",
+      "citation": {
+        "source_id": "src_griseo_glass",
+        "doi": "10.1002/jps.22197",
+        "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/jps.22197",
+        "locator": "Table 2/3 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_benzocaine__i_to_ii",
+      "scoring_unit_id": "mol_benzocaine__i_to_ii",
+      "material_id": "mol_benzocaine",
+      "starting_form_state": "Form I",
+      "product_form_state": "Form II",
+      "event_identity": "Form I → Form II",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "observed_interval",
+        "value_C": null,
+        "lower_C": 43.05,
+        "upper_C": 71.05,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_benzocaine",
+      "citation": {
+        "source_id": "src_benzocaine",
+        "doi": "10.3390/pharmaceutics15051549",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10223642/",
+        "locator": "Form-I DSC Results and thermogram"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_benzocaine__ii_melt",
+      "scoring_unit_id": "mol_benzocaine__ii_melt",
+      "material_id": "mol_benzocaine",
+      "starting_form_state": "Form II or converted Form I",
+      "product_form_state": "liquid",
+      "event_identity": "Form II or converted Form I → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "pooled_value",
+        "value_C": 88.95,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_benzocaine",
+      "citation": {
+        "source_id": "src_benzocaine",
+        "doi": "10.3390/pharmaceutics15051549",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10223642/",
+        "locator": "Form-II fusion Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_flufenamic_acid__tg_crystallize",
+      "scoring_unit_id": "mol_flufenamic_acid__tg_crystallize",
+      "material_id": "mol_flufenamic_acid",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "pattern X",
+      "event_identity": "melt-quenched amorphous state → pattern X",
+      "event_type": "cold_crystallization",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "source_event",
+        "value_C": 54,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_flufenamic_acid",
+      "citation": {
+        "source_id": "src_flufenamic",
+        "doi": "10.1021/acs.molpharmaceut.2c00016",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9097533/",
+        "locator": "Sequential DSC/XRD Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_flufenamic_acid__x_to_iv",
+      "scoring_unit_id": "mol_flufenamic_acid__x_to_iv",
+      "material_id": "mol_flufenamic_acid",
+      "starting_form_state": "pattern X",
+      "product_form_state": "Form IV",
+      "event_identity": "pattern X → Form IV",
+      "event_type": "solid_solid_transition",
+      "direction": "not_reported",
+      "temperature": {
+        "kind": "source_event",
+        "value_C": 74,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_flufenamic_acid",
+      "citation": {
+        "source_id": "src_flufenamic",
+        "doi": "10.1021/acs.molpharmaceut.2c00016",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9097533/",
+        "locator": "Sequential DSC/XRD Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_flufenamic_acid__iv_to_i",
+      "scoring_unit_id": "mol_flufenamic_acid__iv_to_i",
+      "material_id": "mol_flufenamic_acid",
+      "starting_form_state": "Form IV",
+      "product_form_state": "Form I",
+      "event_identity": "Form IV → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "not_reported",
+      "temperature": {
+        "kind": "source_event",
+        "value_C": 97,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_flufenamic_acid",
+      "citation": {
+        "source_id": "src_flufenamic",
+        "doi": "10.1021/acs.molpharmaceut.2c00016",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9097533/",
+        "locator": "Sequential DSC/XRD Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_flufenamic_acid__i_melt",
+      "scoring_unit_id": "mol_flufenamic_acid__i_melt",
+      "material_id": "mol_flufenamic_acid",
+      "starting_form_state": "Form I",
+      "product_form_state": "liquid",
+      "event_identity": "Form I → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "source_event",
+        "value_C": 133,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_flufenamic_acid",
+      "citation": {
+        "source_id": "src_flufenamic",
+        "doi": "10.1021/acs.molpharmaceut.2c00016",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9097533/",
+        "locator": "Sequential DSC/XRD Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_barbital__iii_to_i0",
+      "scoring_unit_id": "mol_barbital__iii_to_i0",
+      "material_id": "mol_barbital",
+      "starting_form_state": "Form III",
+      "product_form_state": "Form I0",
+      "event_identity": "Form III → Form I0",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "observed_interval",
+        "value_C": null,
+        "lower_C": 140,
+        "upper_C": 160,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_barbital",
+      "citation": {
+        "source_id": "src_barbital",
+        "doi": "10.1021/mp400515f",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4066893/",
+        "locator": "Transformation figure and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_barbital__iv_to_iii",
+      "scoring_unit_id": "mol_barbital__iv_to_iii",
+      "material_id": "mol_barbital",
+      "starting_form_state": "Form IV",
+      "product_form_state": "Form III",
+      "event_identity": "Form IV → Form III",
+      "event_type": "solid_solid_transition",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "observed_interval",
+        "value_C": null,
+        "lower_C": 100,
+        "upper_C": 120,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_barbital",
+      "citation": {
+        "source_id": "src_barbital",
+        "doi": "10.1021/mp400515f",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4066893/",
+        "locator": "Transformation figure and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_barbital__v_to_iii",
+      "scoring_unit_id": "mol_barbital__v_to_iii",
+      "material_id": "mol_barbital",
+      "starting_form_state": "Form V",
+      "product_form_state": "Form III",
+      "event_identity": "Form V → Form III",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "observed_interval",
+        "value_C": null,
+        "lower_C": 110,
+        "upper_C": 130,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_barbital",
+      "citation": {
+        "source_id": "src_barbital",
+        "doi": "10.1021/mp400515f",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4066893/",
+        "locator": "Transformation figure and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_barbital__i0_melt",
+      "scoring_unit_id": "mol_barbital__i0_melt",
+      "material_id": "mol_barbital",
+      "starting_form_state": "Form I0",
+      "product_form_state": "liquid",
+      "event_identity": "Form I0 → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 189.9,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.2,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_barbital",
+      "citation": {
+        "source_id": "src_barbital",
+        "doi": "10.1021/mp400515f",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4066893/",
+        "locator": "Melting table"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_barbital__iii_melt",
+      "scoring_unit_id": "mol_barbital__iii_melt",
+      "material_id": "mol_barbital",
+      "starting_form_state": "Form III",
+      "product_form_state": "liquid",
+      "event_identity": "Form III → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 183.3,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.3,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_barbital",
+      "citation": {
+        "source_id": "src_barbital",
+        "doi": "10.1021/mp400515f",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4066893/",
+        "locator": "Melting table"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_barbital__iv_melt",
+      "scoring_unit_id": "mol_barbital__iv_melt",
+      "material_id": "mol_barbital",
+      "starting_form_state": "Form IV",
+      "product_form_state": "liquid",
+      "event_identity": "Form IV → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 181.2,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.7,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_barbital",
+      "citation": {
+        "source_id": "src_barbital",
+        "doi": "10.1021/mp400515f",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4066893/",
+        "locator": "Melting table"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_barbital__v_melt",
+      "scoring_unit_id": "mol_barbital__v_melt",
+      "material_id": "mol_barbital",
+      "starting_form_state": "Form V",
+      "product_form_state": "liquid",
+      "event_identity": "Form V → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 175.6,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.2,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_barbital",
+      "citation": {
+        "source_id": "src_barbital",
+        "doi": "10.1021/mp400515f",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4066893/",
+        "locator": "Melting table"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_glycine__gamma_to_alpha",
+      "scoring_unit_id": "mol_glycine__gamma_to_alpha",
+      "material_id": "mol_glycine",
+      "starting_form_state": "gamma form",
+      "product_form_state": "alpha form",
+      "event_identity": "gamma form → alpha form",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 182.05,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.3,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_glycine",
+      "citation": {
+        "source_id": "src_glycine",
+        "doi": "10.3390/molecules29225366",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11596786/",
+        "locator": "Scored small-pieces run in event table/figure"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_piracetam__ii_to_i",
+      "scoring_unit_id": "mol_piracetam__ii_to_i",
+      "material_id": "mol_piracetam",
+      "starting_form_state": "Form II",
+      "product_form_state": "Form I",
+      "event_identity": "Form II → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset_interval",
+        "value_C": null,
+        "lower_C": 116.85,
+        "upper_C": 126.85,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_piracetam",
+      "citation": {
+        "source_id": "src_piracetam",
+        "doi": "10.1021/acs.cgd.1c01421",
+        "url": "https://doi.org/10.1021/acs.cgd.1c01421",
+        "locator": "Polymorph heating curves and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_piracetam__iii_to_i",
+      "scoring_unit_id": "mol_piracetam__iii_to_i",
+      "material_id": "mol_piracetam",
+      "starting_form_state": "Form III",
+      "product_form_state": "Form I",
+      "event_identity": "Form III → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset_interval",
+        "value_C": null,
+        "lower_C": 116.85,
+        "upper_C": 126.85,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_piracetam",
+      "citation": {
+        "source_id": "src_piracetam",
+        "doi": "10.1021/acs.cgd.1c01421",
+        "url": "https://doi.org/10.1021/acs.cgd.1c01421",
+        "locator": "Polymorph heating curves and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_piracetam__vi_to_i",
+      "scoring_unit_id": "mol_piracetam__vi_to_i",
+      "material_id": "mol_piracetam",
+      "starting_form_state": "Form VI",
+      "product_form_state": "Form I",
+      "event_identity": "Form VI → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset_interval",
+        "value_C": null,
+        "lower_C": 116.85,
+        "upper_C": 126.85,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_piracetam",
+      "citation": {
+        "source_id": "src_piracetam",
+        "doi": "10.1021/acs.cgd.1c01421",
+        "url": "https://doi.org/10.1021/acs.cgd.1c01421",
+        "locator": "Polymorph heating curves and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_piracetam__i_melt",
+      "scoring_unit_id": "mol_piracetam__common_i_melt",
+      "material_id": "mol_piracetam",
+      "starting_form_state": "Form I or converted precursor",
+      "product_form_state": "liquid",
+      "event_identity": "Form I or converted precursor → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "approximate_onset",
+        "value_C": 152.85,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_piracetam",
+      "citation": {
+        "source_id": "src_piracetam",
+        "doi": "10.1021/acs.cgd.1c01421",
+        "url": "https://doi.org/10.1021/acs.cgd.1c01421",
+        "locator": "Polymorph heating curves"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_theophylline__ii_melt",
+      "scoring_unit_id": "mol_theophylline__ii_melt",
+      "material_id": "mol_theophylline",
+      "starting_form_state": "anhydrous Form II",
+      "product_form_state": "liquid",
+      "event_identity": "anhydrous Form II → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 272,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_theophylline",
+      "citation": {
+        "source_id": "src_theophylline",
+        "doi": "10.1155/2013/258435",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4595972/",
+        "locator": "Anhydrous Form-II thermogram and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_celecoxib__tg",
+      "scoring_unit_id": "mol_celecoxib__tg",
+      "material_id": "mol_celecoxib",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "supercooled liquid",
+      "event_identity": "melt-quenched amorphous state → supercooled liquid",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "midpoint",
+        "value_C": 48.9,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 1.7,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_celecoxib",
+      "citation": {
+        "source_id": "src_celecoxib",
+        "doi": "10.1021/acs.analchem.9b01378",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6750642/",
+        "locator": "Thermal-event table/figure"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_celecoxib__cold_cryst",
+      "scoring_unit_id": "mol_celecoxib__cold_cryst",
+      "material_id": "mol_celecoxib",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "crystalline celecoxib",
+      "event_identity": "melt-quenched amorphous state → crystalline celecoxib",
+      "event_type": "cold_crystallization",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 101.2,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_celecoxib",
+      "citation": {
+        "source_id": "src_celecoxib",
+        "doi": "10.1021/acs.analchem.9b01378",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6750642/",
+        "locator": "Thermal-event table/figure"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_celecoxib__melt",
+      "scoring_unit_id": "mol_celecoxib__melt",
+      "material_id": "mol_celecoxib",
+      "starting_form_state": "crystalline celecoxib",
+      "product_form_state": "liquid",
+      "event_identity": "crystalline celecoxib → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 161.4,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.2,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_celecoxib",
+      "citation": {
+        "source_id": "src_celecoxib",
+        "doi": "10.1021/acs.analchem.9b01378",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6750642/",
+        "locator": "Thermal-event table/figure"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_tolbutamide__il_to_ih",
+      "scoring_unit_id": "mol_tolbutamide__il_to_ih",
+      "material_id": "mol_tolbutamide",
+      "starting_form_state": "Form IL",
+      "product_form_state": "Form IH",
+      "event_identity": "Form IL → Form IH",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 37.95,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_tolbutamide",
+      "citation": {
+        "source_id": "src_tolbutamide",
+        "doi": "10.1016/j.xphs.2016.03.021",
+        "url": "https://doi.org/10.1016/j.xphs.2016.03.021",
+        "locator": "Polymorph Results and figure"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_tolbutamide__ih_to_il",
+      "scoring_unit_id": "mol_tolbutamide__ih_to_il",
+      "material_id": "mol_tolbutamide",
+      "starting_form_state": "Form IH",
+      "product_form_state": "Form IL",
+      "event_identity": "Form IH → Form IL",
+      "event_type": "solid_solid_transition",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "source_transformation",
+        "value_C": 39.85,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_tolbutamide",
+      "citation": {
+        "source_id": "src_tolbutamide",
+        "doi": "10.1016/j.xphs.2016.03.021",
+        "url": "https://doi.org/10.1016/j.xphs.2016.03.021",
+        "locator": "Cooling branch in polymorph figure"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_tolbutamide__ii_to_ih",
+      "scoring_unit_id": "mol_tolbutamide__ii_to_ih",
+      "material_id": "mol_tolbutamide",
+      "starting_form_state": "Form II",
+      "product_form_state": "Form IH",
+      "event_identity": "Form II → Form IH",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "source_event",
+        "value_C": 102.85,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_tolbutamide",
+      "citation": {
+        "source_id": "src_tolbutamide",
+        "doi": "10.1016/j.xphs.2016.03.021",
+        "url": "https://doi.org/10.1016/j.xphs.2016.03.021",
+        "locator": "Form-II Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_tolbutamide__melt_cryst_v",
+      "scoring_unit_id": "mol_tolbutamide__melt_cryst_v",
+      "material_id": "mol_tolbutamide",
+      "starting_form_state": "liquid",
+      "product_form_state": "Form V",
+      "event_identity": "liquid → Form V",
+      "event_type": "crystallization_on_cooling",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "approximate_peak",
+        "value_C": 76.85,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_tolbutamide",
+      "citation": {
+        "source_id": "src_tolbutamide",
+        "doi": "10.1016/j.xphs.2016.03.021",
+        "url": "https://doi.org/10.1016/j.xphs.2016.03.021",
+        "locator": "Cooling branch"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_tolbutamide__ih_melt",
+      "scoring_unit_id": "mol_tolbutamide__ih_melt",
+      "material_id": "mol_tolbutamide",
+      "starting_form_state": "Form IH",
+      "product_form_state": "liquid",
+      "event_identity": "Form IH → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 127.15,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.14,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_tolbutamide",
+      "citation": {
+        "source_id": "src_tolbutamide",
+        "doi": "10.1016/j.xphs.2016.03.021",
+        "url": "https://doi.org/10.1016/j.xphs.2016.03.021",
+        "locator": "Polymorph Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_tolbutamide__v_melt",
+      "scoring_unit_id": "mol_tolbutamide__v_melt",
+      "material_id": "mol_tolbutamide",
+      "starting_form_state": "Form V",
+      "product_form_state": "liquid",
+      "event_identity": "Form V → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 102.58,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.051,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_tolbutamide",
+      "citation": {
+        "source_id": "src_tolbutamide",
+        "doi": "10.1016/j.xphs.2016.03.021",
+        "url": "https://doi.org/10.1016/j.xphs.2016.03.021",
+        "locator": "Polymorph Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_loratadine__tg",
+      "scoring_unit_id": "mol_loratadine__tg",
+      "material_id": "mol_loratadine",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "supercooled liquid",
+      "event_identity": "melt-quenched amorphous state → supercooled liquid",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "source_event",
+        "value_C": 34,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_loratadine",
+      "citation": {
+        "source_id": "src_loratadine",
+        "doi": "10.1039/C6RA14021A",
+        "url": "https://doi.org/10.1039/C6RA14021A",
+        "locator": "Figure 10 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_loratadine__cold_cryst",
+      "scoring_unit_id": "mol_loratadine__cold_cryst",
+      "material_id": "mol_loratadine",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "Form B",
+      "event_identity": "melt-quenched amorphous state → Form B",
+      "event_type": "cold_crystallization",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 106.7,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_loratadine",
+      "citation": {
+        "source_id": "src_loratadine",
+        "doi": "10.1039/C6RA14021A",
+        "url": "https://doi.org/10.1039/C6RA14021A",
+        "locator": "Figure 10 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_loratadine__b_to_a",
+      "scoring_unit_id": "mol_loratadine__b_to_a",
+      "material_id": "mol_loratadine",
+      "starting_form_state": "Form B",
+      "product_form_state": "Form A",
+      "event_identity": "Form B → Form A",
+      "event_type": "solid_solid_transition",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 93.9,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_loratadine",
+      "citation": {
+        "source_id": "src_loratadine",
+        "doi": "10.1039/C6RA14021A",
+        "url": "https://doi.org/10.1039/C6RA14021A",
+        "locator": "Figure 10 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_loratadine__a_melt",
+      "scoring_unit_id": "mol_loratadine__common_melt",
+      "material_id": "mol_loratadine",
+      "starting_form_state": "Form A",
+      "product_form_state": "liquid",
+      "event_identity": "Form A → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 134.7,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_loratadine",
+      "citation": {
+        "source_id": "src_loratadine",
+        "doi": "10.1039/C6RA14021A",
+        "url": "https://doi.org/10.1039/C6RA14021A",
+        "locator": "Figure 10 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_loratadine__b_path_melt",
+      "scoring_unit_id": "mol_loratadine__common_melt",
+      "material_id": "mol_loratadine",
+      "starting_form_state": "Form B after conversion",
+      "product_form_state": "liquid",
+      "event_identity": "Form B after conversion → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 134.6,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_loratadine",
+      "citation": {
+        "source_id": "src_loratadine",
+        "doi": "10.1039/C6RA14021A",
+        "url": "https://doi.org/10.1039/C6RA14021A",
+        "locator": "Figure 10 and Results"
+      },
+      "evidence_note": "Shares the common terminal melt scoring unit.",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_flurbiprofen__iii_to_i",
+      "scoring_unit_id": "mol_flurbiprofen__iii_to_i",
+      "material_id": "mol_flurbiprofen",
+      "starting_form_state": "Form III",
+      "product_form_state": "Form I",
+      "event_identity": "Form III → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 55.3,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_flurbiprofen",
+      "citation": {
+        "source_id": "src_flurbiprofen",
+        "doi": "10.1002/jps.20954",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2581769/",
+        "locator": "Polymorph thermogram/table"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_flurbiprofen__ii_to_i",
+      "scoring_unit_id": "mol_flurbiprofen__ii_to_i",
+      "material_id": "mol_flurbiprofen",
+      "starting_form_state": "Form II",
+      "product_form_state": "Form I",
+      "event_identity": "Form II → Form I",
+      "event_type": "melt_mediated_conversion",
+      "direction": "net_exothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 91.5,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_flurbiprofen",
+      "citation": {
+        "source_id": "src_flurbiprofen",
+        "doi": "10.1002/jps.20954",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2581769/",
+        "locator": "Polymorph thermogram/table"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_flurbiprofen__i_melt",
+      "scoring_unit_id": "mol_flurbiprofen__i_melt",
+      "material_id": "mol_flurbiprofen",
+      "starting_form_state": "Form I",
+      "product_form_state": "liquid",
+      "event_identity": "Form I → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 115,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.2,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_flurbiprofen",
+      "citation": {
+        "source_id": "src_flurbiprofen",
+        "doi": "10.1002/jps.20954",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2581769/",
+        "locator": "Polymorph thermogram/table"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_ditbuc6_btbt__ii_to_iii",
+      "scoring_unit_id": "mol_ditbuc6_btbt__ii_to_iii",
+      "material_id": "mol_ditbuc6_btbt",
+      "starting_form_state": "Form II",
+      "product_form_state": "high-temperature Form III",
+      "event_identity": "Form II → high-temperature Form III",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 97,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_ditbuc6_btbt",
+      "citation": {
+        "source_id": "src_ditbuc6",
+        "doi": "10.1021/acs.cgd.5c00046",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12186265/",
+        "locator": "DSC polymorph figure and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_ditbuc6_btbt__iii_melt",
+      "scoring_unit_id": "mol_ditbuc6_btbt__iii_melt",
+      "material_id": "mol_ditbuc6_btbt",
+      "starting_form_state": "Form III",
+      "product_form_state": "liquid",
+      "event_identity": "Form III → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "approximate_onset",
+        "value_C": 145,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_ditbuc6_btbt",
+      "citation": {
+        "source_id": "src_ditbuc6",
+        "doi": "10.1021/acs.cgd.5c00046",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12186265/",
+        "locator": "DSC polymorph figure"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_nifedipine__tg",
+      "scoring_unit_id": "mol_nifedipine__tg",
+      "material_id": "mol_nifedipine",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "supercooled liquid",
+      "event_identity": "melt-quenched amorphous state → supercooled liquid",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "source_event",
+        "value_C": 42,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_nifedipine",
+      "citation": {
+        "source_id": "src_nifedipine",
+        "doi": "10.1002/jps.20925",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jps.20925",
+        "locator": "Figure 2 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_nifedipine__cold_cryst",
+      "scoring_unit_id": "mol_nifedipine__cold_cryst",
+      "material_id": "mol_nifedipine",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "beta form",
+      "event_identity": "melt-quenched amorphous state → beta form",
+      "event_type": "cold_crystallization",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "approximate_peak",
+        "value_C": 110,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_nifedipine",
+      "citation": {
+        "source_id": "src_nifedipine",
+        "doi": "10.1002/jps.20925",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jps.20925",
+        "locator": "Figure 2 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_nifedipine__beta_melt",
+      "scoring_unit_id": "mol_nifedipine__beta_melt",
+      "material_id": "mol_nifedipine",
+      "starting_form_state": "beta form formed on heating",
+      "product_form_state": "liquid/partial alpha conversion",
+      "event_identity": "beta form formed on heating → liquid/partial alpha conversion",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "source_event",
+        "value_C": 163,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_nifedipine",
+      "citation": {
+        "source_id": "src_nifedipine",
+        "doi": "10.1002/jps.20925",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jps.20925",
+        "locator": "Figure 2 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_nifedipine__alpha_melt",
+      "scoring_unit_id": "mol_nifedipine__alpha_melt",
+      "material_id": "mol_nifedipine",
+      "starting_form_state": "alpha form",
+      "product_form_state": "liquid",
+      "event_identity": "alpha form → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "source_event",
+        "value_C": 171,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_nifedipine",
+      "citation": {
+        "source_id": "src_nifedipine",
+        "doi": "10.1002/jps.20925",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jps.20925",
+        "locator": "Figure 2 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_nimesulide__tg",
+      "scoring_unit_id": "mol_nimesulide__tg",
+      "material_id": "mol_nimesulide",
+      "starting_form_state": "vitrified state",
+      "product_form_state": "supercooled liquid",
+      "event_identity": "vitrified state → supercooled liquid",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "source_event",
+        "value_C": 18.85,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_nimesulide",
+      "citation": {
+        "source_id": "src_nimesulide",
+        "doi": "10.1016/j.ijpharm.2017.04.016",
+        "url": "https://upcommons.upc.edu/bitstream/handle/2117/104659/pressure-temperature.pdf",
+        "locator": "Vitrified-branch DSC figure"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_nimesulide__i_melt",
+      "scoring_unit_id": "mol_nimesulide__i_melt",
+      "material_id": "mol_nimesulide",
+      "starting_form_state": "Form I",
+      "product_form_state": "liquid",
+      "event_identity": "Form I → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 149.25,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_nimesulide",
+      "citation": {
+        "source_id": "src_nimesulide",
+        "doi": "10.1016/j.ijpharm.2017.04.016",
+        "url": "https://upcommons.upc.edu/bitstream/handle/2117/104659/pressure-temperature.pdf",
+        "locator": "Form-I DSC Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_nimesulide__ii_melt",
+      "scoring_unit_id": "mol_nimesulide__ii_melt",
+      "material_id": "mol_nimesulide",
+      "starting_form_state": "Form II",
+      "product_form_state": "liquid",
+      "event_identity": "Form II → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 146.65,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_nimesulide",
+      "citation": {
+        "source_id": "src_nimesulide",
+        "doi": "10.1016/j.ijpharm.2017.04.016",
+        "url": "https://upcommons.upc.edu/bitstream/handle/2117/104659/pressure-temperature.pdf",
+        "locator": "Form-II DSC Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_fenofibrate__tg",
+      "scoring_unit_id": "mol_fenofibrate__tg",
+      "material_id": "mol_fenofibrate",
+      "starting_form_state": "melt-vitrified state",
+      "product_form_state": "supercooled liquid",
+      "event_identity": "melt-vitrified state → supercooled liquid",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "onset",
+        "value_C": -19,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_fenofibrate",
+      "citation": {
+        "source_id": "src_fenofibrate",
+        "doi": "10.1016/j.jpha.2014.09.003",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5762493/",
+        "locator": "DSC thermogram and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_fenofibrate__melt",
+      "scoring_unit_id": "mol_fenofibrate__melt",
+      "material_id": "mol_fenofibrate",
+      "starting_form_state": "as-received crystalline state",
+      "product_form_state": "liquid",
+      "event_identity": "as-received crystalline state → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 80.96,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_fenofibrate",
+      "citation": {
+        "source_id": "src_fenofibrate",
+        "doi": "10.1016/j.jpha.2014.09.003",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5762493/",
+        "locator": "DSC thermogram and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_felodipine__tg",
+      "scoring_unit_id": "mol_felodipine__tg",
+      "material_id": "mol_felodipine",
+      "starting_form_state": "melt-quenched amorphous state",
+      "product_form_state": "supercooled liquid",
+      "event_identity": "melt-quenched amorphous state → supercooled liquid",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "half_width",
+        "value_C": 40.85,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_felodipine",
+      "citation": {
+        "source_id": "src_felodipine",
+        "doi": "10.1208/s12249-024-02919-2",
+        "url": "https://doi.org/10.1208/s12249-024-02919-2",
+        "locator": "Thermal-analysis Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_felodipine__i_melt",
+      "scoring_unit_id": "mol_felodipine__i_melt",
+      "material_id": "mol_felodipine",
+      "starting_form_state": "Form I",
+      "product_form_state": "liquid",
+      "event_identity": "Form I → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 148.85,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_felodipine",
+      "citation": {
+        "source_id": "src_felodipine",
+        "doi": "10.1208/s12249-024-02919-2",
+        "url": "https://doi.org/10.1208/s12249-024-02919-2",
+        "locator": "Thermal-analysis Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_sulindac__iv_path",
+      "scoring_unit_id": "mol_sulindac__iv_path",
+      "material_id": "mol_sulindac",
+      "starting_form_state": "Form IV",
+      "product_form_state": "Form I via melt/recrystallization",
+      "event_identity": "Form IV → Form I via melt/recrystallization",
+      "event_type": "melt_mediated_conversion",
+      "direction": "endothermic_then_exothermic",
+      "temperature": {
+        "kind": "observed_region",
+        "value_C": null,
+        "lower_C": 130.8,
+        "upper_C": 160,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_sulindac",
+      "citation": {
+        "source_id": "src_sulindac",
+        "doi": "10.1002/jps.20954",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2581769/",
+        "locator": "Sulindac polymorph thermogram/Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_sulindac__i_melt",
+      "scoring_unit_id": "mol_sulindac__i_melt",
+      "material_id": "mol_sulindac",
+      "starting_form_state": "Form I",
+      "product_form_state": "liquid",
+      "event_identity": "Form I → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 190.6,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.2,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_sulindac",
+      "citation": {
+        "source_id": "src_sulindac",
+        "doi": "10.1002/jps.20954",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2581769/",
+        "locator": "Sulindac melting table"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_sulindac__ii_melt",
+      "scoring_unit_id": "mol_sulindac__ii_melt",
+      "material_id": "mol_sulindac",
+      "starting_form_state": "Form II",
+      "product_form_state": "liquid",
+      "event_identity": "Form II → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 185.6,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_sulindac",
+      "citation": {
+        "source_id": "src_sulindac",
+        "doi": "10.1002/jps.20954",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2581769/",
+        "locator": "Sulindac melting table"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_anthranilic_acid__i_to_iii_4k",
+      "scoring_unit_id": "mol_anthranilic_acid__i_to_iii",
+      "material_id": "mol_anthranilic_acid",
+      "starting_form_state": "Form I",
+      "product_form_state": "Form III",
+      "event_identity": "Form I → Form III",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 97.35,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_anthranilic_acid",
+      "citation": {
+        "source_id": "src_anthranilic",
+        "doi": "10.1021/acs.chemmater.5b02957",
+        "url": "https://pstorage-acs-6854636.s3.amazonaws.com/3762931/cm5b02957_si_001.pdf",
+        "locator": "SI Figure S2, 4 K/min trace"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_anthranilic_acid__i_to_iii_8k",
+      "scoring_unit_id": "mol_anthranilic_acid__i_to_iii",
+      "material_id": "mol_anthranilic_acid",
+      "starting_form_state": "Form I",
+      "product_form_state": "Form III",
+      "event_identity": "Form I → Form III",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 99.85,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_anthranilic_acid",
+      "citation": {
+        "source_id": "src_anthranilic",
+        "doi": "10.1021/acs.chemmater.5b02957",
+        "url": "https://pstorage-acs-6854636.s3.amazonaws.com/3762931/cm5b02957_si_001.pdf",
+        "locator": "SI Figure S2, 8 K/min trace"
+      },
+      "evidence_note": "Rate-specific corroborating anchor; one primary scoring unit.",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_mefenamic_acid__i_to_ii",
+      "scoring_unit_id": "mol_mefenamic_acid__i_to_ii",
+      "material_id": "mol_mefenamic_acid",
+      "starting_form_state": "Form I",
+      "product_form_state": "Form II",
+      "event_identity": "Form I → Form II",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 174,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_mefenamic_acid",
+      "citation": {
+        "source_id": "src_mefenamic",
+        "doi": "10.1080/14756366.2020.1869225",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8759728/",
+        "locator": "Figure 6 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_mefenamic_acid__ii_melt",
+      "scoring_unit_id": "mol_mefenamic_acid__ii_melt",
+      "material_id": "mol_mefenamic_acid",
+      "starting_form_state": "Form II",
+      "product_form_state": "liquid",
+      "event_identity": "Form II → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 232,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_mefenamic_acid",
+      "citation": {
+        "source_id": "src_mefenamic",
+        "doi": "10.1080/14756366.2020.1869225",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8759728/",
+        "locator": "Figure 6 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_sulfamerazine__ii_to_i",
+      "scoring_unit_id": "mol_sulfamerazine__ii_to_i",
+      "material_id": "mol_sulfamerazine",
+      "starting_form_state": "Form II",
+      "product_form_state": "Form I",
+      "event_identity": "Form II → Form I",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset_range",
+        "value_C": null,
+        "lower_C": 150,
+        "upper_C": 170,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_sulfamerazine",
+      "citation": {
+        "source_id": "src_sulfamerazine",
+        "doi": "10.1021/acs.cgd.5c01406",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12784330/",
+        "locator": "Figure 12 and §2.6.1"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_pyrazinamide__alpha_to_gamma",
+      "scoring_unit_id": "mol_pyrazinamide__alpha_to_gamma",
+      "material_id": "mol_pyrazinamide",
+      "starting_form_state": "alpha form",
+      "product_form_state": "gamma form",
+      "event_identity": "alpha form → gamma form",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "approximate_curve_event",
+        "value_C": 151.85,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_pyrazinamide",
+      "citation": {
+        "source_id": "src_pyrazinamide",
+        "doi": "10.1016/j.ijpharm.2020.119230",
+        "url": "https://upcommons.upc.edu/bitstream/handle/2117/340839/Preprint-PZA-2020.pdf?sequence=1",
+        "locator": "Figure 2, §3.1.1"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_pyrazinamide__gamma_melt",
+      "scoring_unit_id": "mol_pyrazinamide__gamma_melt",
+      "material_id": "mol_pyrazinamide",
+      "starting_form_state": "gamma form",
+      "product_form_state": "liquid",
+      "event_identity": "gamma form → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "mean_peak",
+        "value_C": 188.85,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.5,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_pyrazinamide",
+      "citation": {
+        "source_id": "src_pyrazinamide",
+        "doi": "10.1016/j.ijpharm.2020.119230",
+        "url": "https://upcommons.upc.edu/bitstream/handle/2117/340839/Preprint-PZA-2020.pdf?sequence=1",
+        "locator": "§3.1.1, 27-measurement value"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_dapsone__iii_to_ii",
+      "scoring_unit_id": "mol_dapsone__iii_to_ii",
+      "material_id": "mol_dapsone",
+      "starting_form_state": "Form III",
+      "product_form_state": "Form II",
+      "event_identity": "Form III → Form II",
+      "event_type": "solid_solid_transition",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 81.5,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.2,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_dapsone",
+      "citation": {
+        "source_id": "src_dapsone",
+        "doi": "10.1021/acs.cgd.7b01089",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6191030/",
+        "locator": "Figure 3 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_dapsone__ii_to_iii",
+      "scoring_unit_id": "mol_dapsone__ii_to_iii",
+      "material_id": "mol_dapsone",
+      "starting_form_state": "Form II",
+      "product_form_state": "Form III",
+      "event_identity": "Form II → Form III",
+      "event_type": "solid_solid_transition",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "upper_bound",
+        "value_C": 80,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": "below this temperature"
+      },
+      "protocol_id": "protocol_mol_dapsone",
+      "citation": {
+        "source_id": "src_dapsone",
+        "doi": "10.1021/acs.cgd.7b01089",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6191030/",
+        "locator": "Figure 3 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_dapsone__ii_melt",
+      "scoring_unit_id": "mol_dapsone__ii_melt",
+      "material_id": "mol_dapsone",
+      "starting_form_state": "Form II",
+      "product_form_state": "liquid",
+      "event_identity": "Form II → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 177.2,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_dapsone",
+      "citation": {
+        "source_id": "src_dapsone",
+        "doi": "10.1021/acs.cgd.7b01089",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6191030/",
+        "locator": "Figure 3 and Results"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_chlorpropamide__first_melt",
+      "scoring_unit_id": "mol_chlorpropamide__first_melt",
+      "material_id": "mol_chlorpropamide",
+      "starting_form_state": "commercial crystalline state, form not reported",
+      "product_form_state": "liquid",
+      "event_identity": "commercial crystalline state, form not reported → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 124.9,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_chlorpropamide",
+      "citation": {
+        "source_id": "src_chlorpropamide",
+        "doi": "10.3390/ph15030279",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8951776/",
+        "locator": "Figure 2a and §2.1"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_chlorpropamide__cool_cryst",
+      "scoring_unit_id": "mol_chlorpropamide__cool_cryst",
+      "material_id": "mol_chlorpropamide",
+      "starting_form_state": "liquid",
+      "product_form_state": "melt-derived crystalline state",
+      "event_identity": "liquid → melt-derived crystalline state",
+      "event_type": "crystallization_on_cooling",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 54.3,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_chlorpropamide",
+      "citation": {
+        "source_id": "src_chlorpropamide",
+        "doi": "10.3390/ph15030279",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8951776/",
+        "locator": "Figure 2a and §2.1"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_chlorpropamide__alpha_melt",
+      "scoring_unit_id": "mol_chlorpropamide__alpha_melt",
+      "material_id": "mol_chlorpropamide",
+      "starting_form_state": "alpha form in second heat",
+      "product_form_state": "liquid/conversion",
+      "event_identity": "alpha form in second heat → liquid/conversion",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 126.1,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_chlorpropamide",
+      "citation": {
+        "source_id": "src_chlorpropamide",
+        "doi": "10.3390/ph15030279",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8951776/",
+        "locator": "Figure 2a and §2.1"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_chlorpropamide__c_melt",
+      "scoring_unit_id": "mol_chlorpropamide__c_melt",
+      "material_id": "mol_chlorpropamide",
+      "starting_form_state": "Form C in second heat",
+      "product_form_state": "liquid",
+      "event_identity": "Form C in second heat → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 129,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_chlorpropamide",
+      "citation": {
+        "source_id": "src_chlorpropamide",
+        "doi": "10.3390/ph15030279",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8951776/",
+        "locator": "Figure 2a and §2.1"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "mol_phenobarbital__i_melt",
+      "scoring_unit_id": "mol_phenobarbital__i_melt",
+      "material_id": "mol_phenobarbital",
+      "starting_form_state": "Form I",
+      "product_form_state": "liquid",
+      "event_identity": "Form I → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 175.3,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_mol_phenobarbital",
+      "citation": {
+        "source_id": "src_phenobarbital",
+        "doi": "10.1039/C6CC00959J",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4964875/",
+        "locator": "ESI SI 8 pp. S8–S9, Figure S7"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": true
+    },
+    {
+      "anchor_id": "poly_atactic_ps__tg",
+      "scoring_unit_id": "poly_atactic_ps__tg",
+      "material_id": "poly_atactic_ps",
+      "starting_form_state": "source-specified atactic PS",
+      "product_form_state": "rubbery state",
+      "event_identity": "source-specified atactic PS → rubbery state",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "onset_end_intercept",
+        "value_C": 104.7,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.7,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_atactic_ps",
+      "citation": {
+        "source_id": "src_ps",
+        "doi": "10.1002/polb.22028",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/polb.22028",
+        "locator": "Table 1 and Experimental DSC"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_atactic_pmma__tg",
+      "scoring_unit_id": "poly_atactic_pmma__tg",
+      "material_id": "poly_atactic_pmma",
+      "starting_form_state": "source-specified atactic PMMA",
+      "product_form_state": "rubbery state",
+      "event_identity": "source-specified atactic PMMA → rubbery state",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 107,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_atactic_pmma",
+      "citation": {
+        "source_id": "src_pmma",
+        "doi": "10.1039/B9PY00237E",
+        "url": "https://pubs.rsc.org/en/content/articlehtml/2010/py/b9py00237e",
+        "locator": "Figures 1–2 and Apparatus/procedures"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_pet__tg",
+      "scoring_unit_id": "poly_pet__tg",
+      "material_id": "poly_pet",
+      "starting_form_state": "second-heating PET",
+      "product_form_state": "rubbery PET",
+      "event_identity": "second-heating PET → rubbery PET",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "as_tabulated",
+        "value_C": 80,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.4,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_pet",
+      "citation": {
+        "source_id": "src_pet",
+        "doi": "10.3390/ma18184394",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12471776/",
+        "locator": "Table 2 PETv row and Figure 1"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_pet__cold_cryst",
+      "scoring_unit_id": "poly_pet__cold_cryst",
+      "material_id": "poly_pet",
+      "starting_form_state": "second-heating PET",
+      "product_form_state": "crystalline PET",
+      "event_identity": "second-heating PET → crystalline PET",
+      "event_type": "cold_crystallization",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "as_tabulated",
+        "value_C": 164,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 7.86,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_pet",
+      "citation": {
+        "source_id": "src_pet",
+        "doi": "10.3390/ma18184394",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12471776/",
+        "locator": "Table 2 PETv row and Figure 1"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_pet__melt",
+      "scoring_unit_id": "poly_pet__melt",
+      "material_id": "poly_pet",
+      "starting_form_state": "crystalline PET",
+      "product_form_state": "liquid PET",
+      "event_identity": "crystalline PET → liquid PET",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "as_tabulated",
+        "value_C": 249,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.12,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_pet",
+      "citation": {
+        "source_id": "src_pet",
+        "doi": "10.3390/ma18184394",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12471776/",
+        "locator": "Table 2 PETv row and Figure 1"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_pet__cool_cryst",
+      "scoring_unit_id": "poly_pet__cool_cryst",
+      "material_id": "poly_pet",
+      "starting_form_state": "liquid PET",
+      "product_form_state": "semicrystalline PET",
+      "event_identity": "liquid PET → semicrystalline PET",
+      "event_type": "crystallization_on_cooling",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "as_tabulated",
+        "value_C": 168,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 1.2,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_pet",
+      "citation": {
+        "source_id": "src_pet",
+        "doi": "10.3390/ma18184394",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12471776/",
+        "locator": "Table 2 PETv row and Figure 1"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_plla__tg",
+      "scoring_unit_id": "poly_plla__tg",
+      "material_id": "poly_plla",
+      "starting_form_state": "second-heating PLLA",
+      "product_form_state": "rubbery PLLA",
+      "event_identity": "second-heating PLLA → rubbery PLLA",
+      "event_type": "glass_transition",
+      "direction": "baseline_shift",
+      "temperature": {
+        "kind": "as_tabulated",
+        "value_C": 56.7,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.3,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_plla",
+      "citation": {
+        "source_id": "src_plla",
+        "doi": "10.1515/pac-2016-0919",
+        "url": "https://www.degruyter.com/document/doi/10.1515/pac-2016-0919/html",
+        "locator": "Figure 4 and Table 1, 0/100 row"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_plla__cold_cryst",
+      "scoring_unit_id": "poly_plla__cold_cryst",
+      "material_id": "poly_plla",
+      "starting_form_state": "second-heating PLLA",
+      "product_form_state": "crystalline PLLA",
+      "event_identity": "second-heating PLLA → crystalline PLLA",
+      "event_type": "cold_crystallization",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "as_tabulated",
+        "value_C": 122.6,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0.2,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_plla",
+      "citation": {
+        "source_id": "src_plla",
+        "doi": "10.1515/pac-2016-0919",
+        "url": "https://www.degruyter.com/document/doi/10.1515/pac-2016-0919/html",
+        "locator": "Figure 4 and Table 1, 0/100 row"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_plla__melt",
+      "scoring_unit_id": "poly_plla__melt",
+      "material_id": "poly_plla",
+      "starting_form_state": "crystalline PLLA",
+      "product_form_state": "liquid PLLA",
+      "event_identity": "crystalline PLLA → liquid PLLA",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "as_tabulated",
+        "value_C": 148.5,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 0,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_plla",
+      "citation": {
+        "source_id": "src_plla",
+        "doi": "10.1515/pac-2016-0919",
+        "url": "https://www.degruyter.com/document/doi/10.1515/pac-2016-0919/html",
+        "locator": "Figure 4 and Table 1, 0/100 row"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_ipp__cool_cryst",
+      "scoring_unit_id": "poly_ipp__cool_cryst",
+      "material_id": "poly_ipp",
+      "starting_form_state": "liquid nucleated iPP",
+      "product_form_state": "semicrystalline iPP",
+      "event_identity": "liquid nucleated iPP → semicrystalline iPP",
+      "event_type": "crystallization_on_cooling",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 124,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_ipp",
+      "citation": {
+        "source_id": "src_ipp",
+        "doi": "10.3390/polym16121710",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207872/",
+        "locator": "Figure 1 and Tables 2–3"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_ipp__beta_melt",
+      "scoring_unit_id": "poly_ipp__beta_melt",
+      "material_id": "poly_ipp",
+      "starting_form_state": "beta iPP",
+      "product_form_state": "liquid",
+      "event_identity": "beta iPP → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 151,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_ipp",
+      "citation": {
+        "source_id": "src_ipp",
+        "doi": "10.3390/polym16121710",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207872/",
+        "locator": "Figure 1 and Tables 2–3"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_ipp__alpha_melt",
+      "scoring_unit_id": "poly_ipp__alpha_melt",
+      "material_id": "poly_ipp",
+      "starting_form_state": "alpha iPP",
+      "product_form_state": "liquid",
+      "event_identity": "alpha iPP → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 164,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": 1,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_ipp",
+      "citation": {
+        "source_id": "src_ipp",
+        "doi": "10.3390/polym16121710",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207872/",
+        "locator": "Figure 1 and Tables 2–3"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_pvdf__cryst_onset",
+      "scoring_unit_id": "poly_pvdf__alpha_crystallization",
+      "material_id": "poly_pvdf",
+      "starting_form_state": "liquid PVDF",
+      "product_form_state": "alpha-PVDF",
+      "event_identity": "liquid PVDF → alpha-PVDF",
+      "event_type": "crystallization_on_cooling",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "onset",
+        "value_C": 141.3,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_pvdf",
+      "citation": {
+        "source_id": "src_pvdf",
+        "doi": "10.3390/membranes4020243",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4085623/",
+        "locator": "Table 1 and Figures 3–4"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_pvdf__cryst_peak",
+      "scoring_unit_id": "poly_pvdf__alpha_crystallization",
+      "material_id": "poly_pvdf",
+      "starting_form_state": "liquid PVDF",
+      "product_form_state": "alpha-PVDF",
+      "event_identity": "liquid PVDF → alpha-PVDF",
+      "event_type": "crystallization_on_cooling",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 138.1,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_pvdf",
+      "citation": {
+        "source_id": "src_pvdf",
+        "doi": "10.3390/membranes4020243",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4085623/",
+        "locator": "Table 1 and Figures 3–4"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_pvdf__cryst_end",
+      "scoring_unit_id": "poly_pvdf__alpha_crystallization",
+      "material_id": "poly_pvdf",
+      "starting_form_state": "liquid PVDF",
+      "product_form_state": "alpha-PVDF",
+      "event_identity": "liquid PVDF → alpha-PVDF",
+      "event_type": "crystallization_on_cooling",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "final",
+        "value_C": 135.8,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_pvdf",
+      "citation": {
+        "source_id": "src_pvdf",
+        "doi": "10.3390/membranes4020243",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4085623/",
+        "locator": "Table 1 and Figures 3–4"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "poly_pvdf__melt",
+      "scoring_unit_id": "poly_pvdf__melt",
+      "material_id": "poly_pvdf",
+      "starting_form_state": "alpha-PVDF",
+      "product_form_state": "liquid",
+      "event_identity": "alpha-PVDF → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "peak",
+        "value_C": 174.2,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_poly_pvdf",
+      "citation": {
+        "source_id": "src_pvdf",
+        "doi": "10.3390/membranes4020243",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4085623/",
+        "locator": "Table 1 and Figures 3–4"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "complex_cocoa_butter__quench_to_ii",
+      "scoring_unit_id": "complex_cocoa_butter__quench_to_ii",
+      "material_id": "complex_cocoa_butter",
+      "starting_form_state": "quenched sub-alpha/liquid-crystalline state",
+      "product_form_state": "Form II (alpha)",
+      "event_identity": "quenched sub-alpha/liquid-crystalline state → Form II (alpha)",
+      "event_type": "solid_solid_transition",
+      "direction": "not_clearly_resolved",
+      "temperature": {
+        "kind": "observed_interval",
+        "value_C": null,
+        "lower_C": -10,
+        "upper_C": 15,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_complex_cocoa_butter",
+      "citation": {
+        "source_id": "src_cocoa",
+        "doi": "10.1007/s11746-998-0245-y",
+        "url": "https://lib3.dss.go.th/fulltext/Journal/J.AOCS/J.AOCS/1998/no.4/1998%2Cvol75%2Cno4%2Cp425-439.pdf",
+        "locator": "Discussion pp. 435–436; Figures 4–5"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "complex_cocoa_butter__ii_melt",
+      "scoring_unit_id": "complex_cocoa_butter__ii_melt",
+      "material_id": "complex_cocoa_butter",
+      "starting_form_state": "Form II",
+      "product_form_state": "liquid",
+      "event_identity": "Form II → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "observed_interval",
+        "value_C": null,
+        "lower_C": 15,
+        "upper_C": 18,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_complex_cocoa_butter",
+      "citation": {
+        "source_id": "src_cocoa",
+        "doi": "10.1007/s11746-998-0245-y",
+        "url": "https://lib3.dss.go.th/fulltext/Journal/J.AOCS/J.AOCS/1998/no.4/1998%2Cvol75%2Cno4%2Cp425-439.pdf",
+        "locator": "Figure 6C and text pp. 431–433"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "complex_cocoa_butter__iii_recryst",
+      "scoring_unit_id": "complex_cocoa_butter__iii_recryst",
+      "material_id": "complex_cocoa_butter",
+      "starting_form_state": "liquid after Form-II melting",
+      "product_form_state": "Form III",
+      "event_identity": "liquid after Form-II melting → Form III",
+      "event_type": "recrystallization",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "observed_interval",
+        "value_C": null,
+        "lower_C": 16,
+        "upper_C": 19,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_complex_cocoa_butter",
+      "citation": {
+        "source_id": "src_cocoa",
+        "doi": "10.1007/s11746-998-0245-y",
+        "url": "https://lib3.dss.go.th/fulltext/Journal/J.AOCS/J.AOCS/1998/no.4/1998%2Cvol75%2Cno4%2Cp425-439.pdf",
+        "locator": "Figure 6C and text pp. 431–433"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "complex_cocoa_butter__iv_cryst",
+      "scoring_unit_id": "complex_cocoa_butter__iv_cryst",
+      "material_id": "complex_cocoa_butter",
+      "starting_form_state": "partially molten/recrystallizing fat",
+      "product_form_state": "Form IV",
+      "event_identity": "partially molten/recrystallizing fat → Form IV",
+      "event_type": "recrystallization",
+      "direction": "exothermic",
+      "temperature": {
+        "kind": "start_bound",
+        "value_C": 18,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": "starts at about"
+      },
+      "protocol_id": "protocol_complex_cocoa_butter",
+      "citation": {
+        "source_id": "src_cocoa",
+        "doi": "10.1007/s11746-998-0245-y",
+        "url": "https://lib3.dss.go.th/fulltext/Journal/J.AOCS/J.AOCS/1998/no.4/1998%2Cvol75%2Cno4%2Cp425-439.pdf",
+        "locator": "Figure 6B–C text"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "complex_cocoa_butter__iv_to_v",
+      "scoring_unit_id": "complex_cocoa_butter__iv_to_v",
+      "material_id": "complex_cocoa_butter",
+      "starting_form_state": "Form IV",
+      "product_form_state": "Form V via melt/recrystallization",
+      "event_identity": "Form IV → Form V via melt/recrystallization",
+      "event_type": "melt_mediated_conversion",
+      "direction": "endothermic_then_exothermic",
+      "temperature": {
+        "kind": "start_bound",
+        "value_C": 25,
+        "lower_C": null,
+        "upper_C": null,
+        "uncertainty_C": null,
+        "qualifier": "Form V crystallization starts at about"
+      },
+      "protocol_id": "protocol_complex_cocoa_butter",
+      "citation": {
+        "source_id": "src_cocoa",
+        "doi": "10.1007/s11746-998-0245-y",
+        "url": "https://lib3.dss.go.th/fulltext/Journal/J.AOCS/J.AOCS/1998/no.4/1998%2Cvol75%2Cno4%2Cp425-439.pdf",
+        "locator": "Figure 6C and accompanying text"
+      },
+      "evidence_note": "",
+      "event_class": "non_melting_pathway",
+      "counts_toward_primary": false
+    },
+    {
+      "anchor_id": "complex_cocoa_butter__v_melt",
+      "scoring_unit_id": "complex_cocoa_butter__v_melt",
+      "material_id": "complex_cocoa_butter",
+      "starting_form_state": "Form V",
+      "product_form_state": "liquid",
+      "event_identity": "Form V → liquid",
+      "event_type": "melting",
+      "direction": "endothermic",
+      "temperature": {
+        "kind": "observed_interval",
+        "value_C": null,
+        "lower_C": 27,
+        "upper_C": 34.5,
+        "uncertainty_C": null,
+        "qualifier": ""
+      },
+      "protocol_id": "protocol_complex_cocoa_butter",
+      "citation": {
+        "source_id": "src_cocoa",
+        "doi": "10.1007/s11746-998-0245-y",
+        "url": "https://lib3.dss.go.th/fulltext/Journal/J.AOCS/J.AOCS/1998/no.4/1998%2Cvol75%2Cno4%2Cp425-439.pdf",
+        "locator": "Figure 6C and accompanying text"
+      },
+      "evidence_note": "",
+      "event_class": "terminal_melting",
+      "counts_toward_primary": false
+    }
+  ]
+}

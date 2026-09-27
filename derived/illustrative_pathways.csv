@@ -1,0 +1,45 @@
+material_id,scoring_unit_id,event_identity,event_type,source_temperature,source_locator,model,model_label,recovered_generations,generation_opportunities
+mol_carbamazepine,mol_carbamazepine__common_i_melt,Form I or converted precursor → liquid,melting,191 °C (onset),Figure 6b and Results,gpt-5.6-luna,Luna 5.6 API,3,3
+mol_carbamazepine,mol_carbamazepine__common_i_melt,Form I or converted precursor → liquid,melting,191 °C (onset),Figure 6b and Results,gpt-6-luna,Luna 6 API,3,3
+mol_carbamazepine,mol_carbamazepine__common_i_melt,Form I or converted precursor → liquid,melting,191 °C (onset),Figure 6b and Results,gpt-5.6-sol,Sol CLI,3,3
+mol_carbamazepine,mol_carbamazepine__common_i_melt,Form I or converted precursor → liquid,melting,191 °C (onset),Figure 6b and Results,claude-opus-5-5,Opus CLI,3,3
+mol_carbamazepine,mol_carbamazepine__ii_to_i,Form II → Form I,melt_mediated_conversion,119 °C (onset),Figure 9 and CBZ II Results,gpt-5.6-luna,Luna 5.6 API,0,3
+mol_carbamazepine,mol_carbamazepine__ii_to_i,Form II → Form I,melt_mediated_conversion,119 °C (onset),Figure 9 and CBZ II Results,gpt-6-luna,Luna 6 API,0,3
+mol_carbamazepine,mol_carbamazepine__ii_to_i,Form II → Form I,melt_mediated_conversion,119 °C (onset),Figure 9 and CBZ II Results,gpt-5.6-sol,Sol CLI,0,3
+mol_carbamazepine,mol_carbamazepine__ii_to_i,Form II → Form I,melt_mediated_conversion,119 °C (onset),Figure 9 and CBZ II Results,claude-opus-5-5,Opus CLI,0,3
+mol_carbamazepine,mol_carbamazepine__iii_to_i,Form III → Form I,melt_sublimation_recrystallization,165-175 °C (observed_interval),Form III discussion after Figure 11,gpt-5.6-luna,Luna 5.6 API,0,3
+mol_carbamazepine,mol_carbamazepine__iii_to_i,Form III → Form I,melt_sublimation_recrystallization,165-175 °C (observed_interval),Form III discussion after Figure 11,gpt-6-luna,Luna 6 API,0,3
+mol_carbamazepine,mol_carbamazepine__iii_to_i,Form III → Form I,melt_sublimation_recrystallization,165-175 °C (observed_interval),Form III discussion after Figure 11,gpt-5.6-sol,Sol CLI,0,3
+mol_carbamazepine,mol_carbamazepine__iii_to_i,Form III → Form I,melt_sublimation_recrystallization,165-175 °C (observed_interval),Form III discussion after Figure 11,claude-opus-5-5,Opus CLI,0,3
+mol_carbamazepine,mol_carbamazepine__iv_to_i,Form IV → Form I,melt_mediated_conversion,182 °C (onset),Form IV Results and Figure 6,gpt-5.6-luna,Luna 5.6 API,0,3
+mol_carbamazepine,mol_carbamazepine__iv_to_i,Form IV → Form I,melt_mediated_conversion,182 °C (onset),Form IV Results and Figure 6,gpt-6-luna,Luna 6 API,1,3
+mol_carbamazepine,mol_carbamazepine__iv_to_i,Form IV → Form I,melt_mediated_conversion,182 °C (onset),Form IV Results and Figure 6,gpt-5.6-sol,Sol CLI,1,3
+mol_carbamazepine,mol_carbamazepine__iv_to_i,Form IV → Form I,melt_mediated_conversion,182 °C (onset),Form IV Results and Figure 6,claude-opus-5-5,Opus CLI,1,3
+mol_flufenamic_acid,mol_flufenamic_acid__i_melt,Form I → liquid,melting,133 °C (source_event),Sequential DSC/XRD Results,gpt-5.6-luna,Luna 5.6 API,3,3
+mol_flufenamic_acid,mol_flufenamic_acid__i_melt,Form I → liquid,melting,133 °C (source_event),Sequential DSC/XRD Results,gpt-6-luna,Luna 6 API,3,3
+mol_flufenamic_acid,mol_flufenamic_acid__i_melt,Form I → liquid,melting,133 °C (source_event),Sequential DSC/XRD Results,gpt-5.6-sol,Sol CLI,3,3
+mol_flufenamic_acid,mol_flufenamic_acid__i_melt,Form I → liquid,melting,133 °C (source_event),Sequential DSC/XRD Results,claude-opus-5-5,Opus CLI,3,3
+mol_flufenamic_acid,mol_flufenamic_acid__iv_to_i,Form IV → Form I,solid_solid_transition,97 °C (source_event),Sequential DSC/XRD Results,gpt-5.6-luna,Luna 5.6 API,3,3
+mol_flufenamic_acid,mol_flufenamic_acid__iv_to_i,Form IV → Form I,solid_solid_transition,97 °C (source_event),Sequential DSC/XRD Results,gpt-6-luna,Luna 6 API,2,3
+mol_flufenamic_acid,mol_flufenamic_acid__iv_to_i,Form IV → Form I,solid_solid_transition,97 °C (source_event),Sequential DSC/XRD Results,gpt-5.6-sol,Sol CLI,0,3
+mol_flufenamic_acid,mol_flufenamic_acid__iv_to_i,Form IV → Form I,solid_solid_transition,97 °C (source_event),Sequential DSC/XRD Results,claude-opus-5-5,Opus CLI,1,3
+mol_flufenamic_acid,mol_flufenamic_acid__tg_crystallize,melt-quenched amorphous state → pattern X,cold_crystallization,54 °C (source_event),Sequential DSC/XRD Results,gpt-5.6-luna,Luna 5.6 API,0,3
+mol_flufenamic_acid,mol_flufenamic_acid__tg_crystallize,melt-quenched amorphous state → pattern X,cold_crystallization,54 °C (source_event),Sequential DSC/XRD Results,gpt-6-luna,Luna 6 API,0,3
+mol_flufenamic_acid,mol_flufenamic_acid__tg_crystallize,melt-quenched amorphous state → pattern X,cold_crystallization,54 °C (source_event),Sequential DSC/XRD Results,gpt-5.6-sol,Sol CLI,0,3
+mol_flufenamic_acid,mol_flufenamic_acid__tg_crystallize,melt-quenched amorphous state → pattern X,cold_crystallization,54 °C (source_event),Sequential DSC/XRD Results,claude-opus-5-5,Opus CLI,0,3
+mol_flufenamic_acid,mol_flufenamic_acid__x_to_iv,pattern X → Form IV,solid_solid_transition,74 °C (source_event),Sequential DSC/XRD Results,gpt-5.6-luna,Luna 5.6 API,0,3
+mol_flufenamic_acid,mol_flufenamic_acid__x_to_iv,pattern X → Form IV,solid_solid_transition,74 °C (source_event),Sequential DSC/XRD Results,gpt-6-luna,Luna 6 API,0,3
+mol_flufenamic_acid,mol_flufenamic_acid__x_to_iv,pattern X → Form IV,solid_solid_transition,74 °C (source_event),Sequential DSC/XRD Results,gpt-5.6-sol,Sol CLI,0,3
+mol_flufenamic_acid,mol_flufenamic_acid__x_to_iv,pattern X → Form IV,solid_solid_transition,74 °C (source_event),Sequential DSC/XRD Results,claude-opus-5-5,Opus CLI,0,3
+mol_paracetamol,mol_paracetamol__ii_melt,Form II → liquid,melting,155 °C (onset),Figure 3 and Results,gpt-5.6-luna,Luna 5.6 API,1,3
+mol_paracetamol,mol_paracetamol__ii_melt,Form II → liquid,melting,155 °C (onset),Figure 3 and Results,gpt-6-luna,Luna 6 API,2,3
+mol_paracetamol,mol_paracetamol__ii_melt,Form II → liquid,melting,155 °C (onset),Figure 3 and Results,gpt-5.6-sol,Sol CLI,3,3
+mol_paracetamol,mol_paracetamol__ii_melt,Form II → liquid,melting,155 °C (onset),Figure 3 and Results,claude-opus-5-5,Opus CLI,3,3
+mol_paracetamol,mol_paracetamol__iii_to_ii,Form III → Form II,solid_solid_transition,109-120 °C (observed_interval),Figure 3 and Results,gpt-5.6-luna,Luna 5.6 API,2,3
+mol_paracetamol,mol_paracetamol__iii_to_ii,Form III → Form II,solid_solid_transition,109-120 °C (observed_interval),Figure 3 and Results,gpt-6-luna,Luna 6 API,1,3
+mol_paracetamol,mol_paracetamol__iii_to_ii,Form III → Form II,solid_solid_transition,109-120 °C (observed_interval),Figure 3 and Results,gpt-5.6-sol,Sol CLI,3,3
+mol_paracetamol,mol_paracetamol__iii_to_ii,Form III → Form II,solid_solid_transition,109-120 °C (observed_interval),Figure 3 and Results,claude-opus-5-5,Opus CLI,3,3
+mol_paracetamol,mol_paracetamol__sc_to_iii,melt-quenched supercooled state → Form III,cold_crystallization,62-72 °C (observed_interval),Figure 2 and Results,gpt-5.6-luna,Luna 5.6 API,2,3
+mol_paracetamol,mol_paracetamol__sc_to_iii,melt-quenched supercooled state → Form III,cold_crystallization,62-72 °C (observed_interval),Figure 2 and Results,gpt-6-luna,Luna 6 API,0,3
+mol_paracetamol,mol_paracetamol__sc_to_iii,melt-quenched supercooled state → Form III,cold_crystallization,62-72 °C (observed_interval),Figure 2 and Results,gpt-5.6-sol,Sol CLI,0,3
+mol_paracetamol,mol_paracetamol__sc_to_iii,melt-quenched supercooled state → Form III,cold_crystallization,62-72 °C (observed_interval),Figure 2 and Results,claude-opus-5-5,Opus CLI,0,3
