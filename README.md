@@ -50,15 +50,12 @@ The original API experiment and subscription-CLI extension remain separate in th
 
 ## Manuscript and archival links
 
-- ChemRxiv preprint: pending author approval and deposit.
-- Archival release DOI: pending repository publication and Zenodo release.
+- ChemRxiv preprint: pending deposit.
+- Dataset: [Zenodo, version 1.0.0](https://doi.org/10.5281/zenodo.23004000).
+- Analysis code and reproducibility documentation: this repository.
 
-The repository URL reserved for the manuscript is:
-
-`https://github.com/LavindaLab/dsc-thermal-pathway-benchmark`
-
-Until that repository is created and verified publicly, the manuscript should retain a placeholder rather than presenting the URL as live.
+Repository: `https://github.com/LavindaLab/dsc-thermal-pathway-benchmark`
 
 ## Source and use information
 
-Literature sources are identified by DOI and source locator in `study/literature_reference.json`. See `DATA_USE_NOTICE.md` for the boundary between author-generated code, structured benchmark records, model-derived fields, and third-party source material. File hashes for the release candidate are recorded in `SHA256SUMS.txt`.
+Literature sources are identified by DOI and source locator in `study/literature_reference.json`. See `LICENSE` and `DATA_USE_NOTICE.md` for the boundary between author-generated code, structured benchmark records, model-derived fields, and third-party source material. File hashes for the release are recorded in `SHA256SUMS.txt`.
