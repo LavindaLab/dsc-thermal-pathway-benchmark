@@ -50,7 +50,7 @@ The original API experiment and subscription-CLI extension remain separate in th
 
 ## Manuscript and archival links
 
-- ChemRxiv preprint: pending deposit.
+- ChemRxiv preprint: submitted; record link will be added when available.
 - Dataset: [Zenodo, version 1.0.0](https://doi.org/10.5281/zenodo.23004000).
 - Analysis code and reproducibility documentation: this repository.
 
